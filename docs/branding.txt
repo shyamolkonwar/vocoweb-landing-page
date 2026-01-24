@@ -1,0 +1,125 @@
+# 🎨 The Sprint Zero Design System (v1.0)
+
+## 1. Core Philosophy
+
+* **Concept:** "The Industrial Blueprint."
+* **Keywords:** Precision, Velocity, Capital, Engineering.
+* **Rule of Thumb:** If it doesn't convey data or structure, delete it. No gradients, no drop shadows, no rounded "friendly" corners. We are building a machine, not a playground.
+
+---
+
+## 2. Color Palette (Strict Monochrome)
+
+We use a high-contrast system. We do not use "colors" in the traditional sense. Color is used only for *status* (e.g., Green = Online, Red = Offline).
+
+| Role | Color Name | Hex Code | Usage Rule |
+| --- | --- | --- | --- |
+| **Canvas** | `Paper White` | `#FFFFFF` | Background for 95% of the site. |
+| **Surface** | `Off White` | `#FAFAFA` | Subtle background for "cards" or sections. |
+| **Ink** | `Carbon` | `#0A0A0A` | Primary text. Not pure black (easier on eyes). |
+| **Graphite** | `Steel` | `#525252` | Secondary text, descriptions, footnotes. |
+| **Structure** | `Vapor` | `#E5E5E5` | Thin 1px borders. Defines the grid. |
+| **Interaction** | `Pure Black` | `#000000` | Buttons, Active States, Links. |
+
+**Status Colors (Use Sparingly):**
+
+* 🟢 `Signal Green` (`#22C55E`): Validated, Open, Revenue.
+* 🔴 `Signal Red` (`#EF4444`): Closed, Error, Risk.
+* 🟡 `Signal Amber` (`#EAB308`): Beta, Limited Spots.
+
+---
+
+## 3. Typography (The "Venture" Stack)
+
+Typography is the primary interface. We mix a **geometric sans-serif** (for reading) with a **terminal monospace** (for data).
+
+### **A. Primary Font: `Inter` or `Geist Sans**`
+
+* **Usage:** Headings, Paragraphs, Buttons.
+* **Settings:**
+* **Headings:** `tracking-tight` (-0.02em to -0.04em). Weight: `Medium` or `SemiBold`.
+* **Body:** `tracking-normal`. Weight: `Regular`.
+* **Leading (Line Height):** Tight for headings (1.1), Loose for body (1.6).
+
+
+
+### **B. Secondary Font: `JetBrains Mono` or `Geist Mono**`
+
+* **Usage:** Eyebrows, Tags, Data Points, Navigation Links, Footnotes.
+* **Settings:**
+* Always `Uppercase`.
+* Small size (`text-xs` or `12px`).
+* `tracking-widest` (0.05em to 0.1em) to make it look like a technical label.
+
+
+
+---
+
+## 4. Layout & Grid Principles
+
+The design relies on a visible or implied **Grid**.
+
+* **The Container:** Max-width `1152px` (6xl).
+* **The Borders:** Sections are separated by full-width 1px solid borders (`border-neutral-200`).
+* **The Bento Box:** Content is organized into rectangular "cards" or "cells."
+* *Padding:* Generous inside cards (`p-8`).
+* *Spacing:* Tight gaps between cards (`gap-4` or `gap-px`).
+
+
+* **Alignment:** Everything aligns to the **Left**. No centered text (except strictly for isolated headlines).
+
+---
+
+## 5. Component Library
+
+### **Buttons & Actions**
+
+* **Primary Button:**
+* Background: `#000000` (Black).
+* Text: `#FFFFFF` (White).
+* Shape: Sharp corners (`rounded-none` or `rounded-sm` max 2px).
+* Hover: No fade. Instant color swap or slight lift.
+
+
+* **Secondary Button:**
+* Background: Transparent.
+* Border: 1px Solid `#E5E5E5`.
+* Text: `#0A0A0A`.
+
+
+
+### **Cards (The "Features")**
+
+* **Style:** Flat. No shadow.
+* **Border:** 1px Solid `#E5E5E5`.
+* **Interaction:** On hover, the border turns Black (`#000000`). This is a "micro-interaction" that signals focus.
+
+### **Tags & Pills**
+
+* **Style:** Small, rectangular labels.
+* **Font:** Monospace, Uppercase.
+* **Appearance:** Light Gray background (`#F5F5F5`) with Dark Gray text (`#525252`).
+
+---
+
+## 6. Motion & Interaction (Framer Motion)
+
+Movement should feel "mechanical" and "snappy," not "floaty."
+
+* **Transitions:** `duration: 0.2s`, `ease: "easeOut"`.
+* **Scroll Reveal:** Elements do not "fade in." They **slide up** slightly (`y: 10`) and lock into place.
+* **Stagger:** Lists (like the Pricing checklist) reveal one by one, very quickly (50ms delay between items).
+
+---
+
+## 7. Voice & Tone (Copywriting)
+
+Your brand voice is **The Engineer-Founder**.
+
+* **Do:** Be precise, numerical, and confident. Use words like *Protocol, Architecture, Deploy, Asset, Velocity, Infrastructure*.
+* **Don't:** Be "friendly," "bubbly," or "salesy." Avoid exclamation marks (!). Avoid buzzwords like *Synergy, Passion, Journey*.
+
+**Example:**
+
+* ❌ *Bad:* "We love helping startups grow and we are super passionate about coding!"
+* ✅ *Good:* "We engineer revenue-generating assets. From idea to deployment in 21 days."

@@ -1,0 +1,104 @@
+📂 VocoWeb: Design & UX Documentation
+1. Brand Identity: "The Foundry"
+Core Concept: Industrial Software. VocoWeb is not a "no-code tool"; it is a Foundry. It melts down complexity and casts revenue.
+Visual Metaphor: The Terminal / The Dashboard.
+Palette:
+Primary: Monochrome (White/Black).
+Accent (Status): Signal Orange (#F97316) — Used specifically for "Alerts" (e.g., "Stripe Account Risk").
+Success: Signal Green (#22C55E) — Used for "Revenue" and "Growth".
+2. Component Architecture (Section by Section)
+[Navigation Bar]
+Structure: Fixed height (h-16), full-width bottom border.
+Left (Identity): VocoWeb in Inter SemiBold. Next to it, a small pill tag: [ BETA v1.0 ] in Mono.
+Right (Actions):
+Links (Manifesto, Pricing, Login) in Mono, separated by vertical dividers (|).
+CTA Button: [ Start Building ]. Solid Black background, White text. Sharp corners.
+[Section 1: The Hero (The Promise)]
+Layout: Left-aligned text, high negative space.
+Typography:
+Headline: Huge, tight tracking. "Stop Building" in Black, "Frankenstein Apps" in Strikethrough Gray, replaced by "Revenue Assets".
+Sub-head: Readable width (max-w-2xl).
+The "System Alert" (Guarantee):
+Place the $10k/mo revenue guarantee inside a Status Badge.
+Style: Thin border, light gray background, Green dot icon.
+Text (Mono): GUARANTEE_PROTOCOL: $10K/MO REVENUE OR REFUND
+Buttons:
+Primary: [ Start Building ] (Black).
+Helper Text: "No credit card required" (Mono, Gray).
+[Section 2: The Anti-Pitch (Agitation)]
+Design Pattern: The "Split Screen" or "Terminal Log".
+Visual: A stark, two-column grid.
+Left Column (The Hard Truth):
+Headline: "THE HARD TRUTH" (Mono, Large).
+Body: High-contrast typography. Use bolding for "technical debt" and "Stripe suspension".
+Right Column (The Contrast):
+Visual: A simple comparison list.
+❌ AI Code = Spaghetti.
+❌ Vercel = Deployment Hell.
+✅ VocoWeb = Business Runtime.
+[Section 3: The 3 Pillars (The Filter)]
+Design Pattern: The Bento Grid (3 Vertical Cards).
+Card Style:
+White background, 1px Gray border.
+Hover Effect: Border turns Black.
+Content Layout (Inside Card):
+Icon: Top Left. Simple, thin-stroke icon (e.g., a "Server" icon for Infrastructure, a "Shield" for Payments).
+Title: Large, bold.
+The Problem: Small text, Gray. [ PROBLEM: CONNECTION TIMEOUT ]
+The Solution: Normal text, Black. "Managed MicroVMs."
+Why this works: It creates a visual rhythm of "Problem -> Solution" in every card.
+[Section 4: The Product Visualization]
+Goal: Show, don't just tell.
+Visual: A "Wireframe" screenshot of the dashboard.
+Don't use a realistic screenshot (can look messy). Use a schematic representation.
+Show three panels: Code Editor (Left), Revenue Graph (Top Right), SEO Traffic (Bottom Right).
+The Feature List:
+Display as a "System Check" list on the side.
+[ OK ] Sandboxed Runtime
+[ OK ] Global Payments
+[ OK ] Auto-Scale DB
+[Section 5: Pricing (The Intent Test)]
+Design Pattern: The "Contract" (Term Sheet).
+Toggle: A mechanical toggle switch (Black/White) for Monthly/Yearly.
+Card 1: Builder ($39)
+Style: White Card, Gray Border.
+Vibe: Standard. "For Prototyping."
+Button: [ Start Building ] (Outline).
+Card 2: Founder ($79)
+Style: Inverted. Solid Black Card, White Text.
+Vibe: Premium, Serious. "For Shipping."
+Highlight: The "Merchant of Record" feature should be highlighted in a white box inside the black card.
+Button: [ Start Business ] (White Background, Black Text).
+UX Note: This visual distinction (White vs. Black) forces the user to choose a "side" — Hobbyist vs. Professional.
+[Section 6: FAQ (Handling Objections)]
+Design Pattern: The "Accordion" List.
+Style:
+Questions in Inter SemiBold.
+Answers in Mono (makes it feel like technical documentation).
+Separated by full-width horizontal lines.
+[Footer]
+Style: The "Anchored Split" (Same as Sprint Zero).
+Left: VocoWeb © 2026. Status: Operational.
+Right: Twitter | LinkedIn | Terms.
+3. Implementation Guide: The "Fake Door" Logic
+This is the most critical part of the VocoWeb MVP. The design must support the intent tracking mechanism.
+
+Mechanism A: The "Builder" Button ($39)
+Visual Cue: Outline button. Looks "safe."
+Interaction:
+On Click -> Open Modal.
+Modal Design: Minimalist. "Join the Waitlist."
+Micro-copy: "We are currently onboarding batch #5. Secure your spot."
+Metric: Count this as "Low Intent Lead."
+Mechanism B: The "Founder" Button ($79)
+Visual Cue: Solid White button on Black card. Looks "committed."
+Interaction:
+On Click -> Redirect to a new page (or Stripe Checkout).
+The Page: A "Business Registration" form. Ask for "Company Name" and "Business Type."
+Logic: Even if you don't actually process the $79 yet, the act of clicking a button that implies payment and filling out business details proves High Intent.
+Metric: Count this as "Validated Customer."
+4. Typography & Grid Rules (Summary)
+Grid: All sections must align to a 12-column grid.
+Spacing: Use py-24 (96px) for section padding.
+Borders: Use border-b for every section to create the "stacked paper" look.
+Icons: Use Lucide React or Phosphor Icons. Set stroke width to 1.5px (Thin/Technical).
