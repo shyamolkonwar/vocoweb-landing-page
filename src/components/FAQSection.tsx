@@ -32,7 +32,7 @@ const faqItems: FAQItem[] = [
     {
         question: "Is my data secure?",
         answer:
-            "Absolutely. All projects run on isolated MicroVMs with enterprise-grade security. We're SOC 2 compliant, use end-to-end encryption, and never access your customer data. Your code and data are yours, we just provide the infrastructure.",
+            "Absolutely. All projects run on isolated MicroVMs with enterprise-grade security. We use end-to-end encryption, and never access your customer data. Your code and data are yours, we just provide the infrastructure.",
     },
 ];
 
