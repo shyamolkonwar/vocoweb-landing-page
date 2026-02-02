@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "VocoWeb - Stop Building Frankenstein Apps",
   description: "VocoWeb doesn't just write code. We run the business. Build apps that won't get banned by Stripe.",
   keywords: ["VocoWeb", "SaaS", "app builder", "no-code", "business automation"],
-  authors: [{ name: "Fusion Focus" }],
+  authors: [{ name: "VocoWeb" }],
   openGraph: {
     title: "VocoWeb - Stop Building Frankenstein Apps",
     description: "VocoWeb doesn't just write code. We run the business.",

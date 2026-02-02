@@ -1,0 +1,60 @@
+
+PRIVACY POLICY
+Effective Date: February 2, 2026 Last Updated: February 2, 2026
+
+1. Introduction
+Welcome to VocoWeb. We are committed to protecting your personal information and your intellectual property.
+
+This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://www.google.com/search?q=vocoweb.com (the "Site") and use our AI-powered application building services (the "Service").
+
+We built VocoWeb to be the "adult in the room" regarding infrastructure and data safety. Unlike other platforms, we treat your project data as your asset, not ours.
+
+2. Information We Collect
+We collect information that identifies, relates to, describes, or could reasonably be linked to you ("Personal Data").
+
+A. Information You Provide to Us
+Account Information: Name, email address, and password when you register.
+Billing Information: If you subscribe to a paid plan (Builder/Founder), our payment processors (acting as our Merchant of Record partners) collect your billing address and payment method details. We do not store raw credit card numbers on our servers.
+Project Data: The code, assets, databases, text prompts, and architectural specifications you input into VocoWeb to build your applications.
+Support Data: Information you provide when contacting customer support or reporting bugs.
+B. Information We Collect Automatically
+Usage Data: Details of your visits to our Site, including traffic data, logs, and other communication data.
+Device Data: IP address, operating system, and browser type.
+Cookies: We use cookies to manage sessions and authentication. We do not use third-party tracking cookies to sell your data to advertisers.
+3. How We Use Your Information
+We use your data for the following specific purposes:
+To Provide the Service: Creating accounts, spinning up your isolated MicroVMs, and managing your deployments.
+To Power the AI Builder: Your prompts and code context are sent to our AI providers (e.g., Anthropic, OpenAI) solely for the purpose of generating your requested code.
+To Process Payments: Facilitating transactions through our Merchant of Record infrastructure.
+To Ensure Security: Monitoring for bot attacks, abuse of our "Unlimited Iteration" policy, and unauthorized access attempts.
+To Communicate: Sending transactional emails (invoices, password resets) and product updates.
+4. Your Code & AI Training (The "No-Theft" Guarantee)
+We know you are building a business, not just a toy. Your intellectual property is paramount.
+Ownership: You retain full ownership of all code, assets, and databases generated within VocoWeb.
+AI Training Policy: We do not use your private project code to train our public AI models. Your proprietary algorithms and business logic remain confidential.
+Isolation: Your code runs in isolated MicroVMs. It is not shared with other users, nor does it "leak" into a shared knowledge base.
+5. Sharing Your Information
+We do not sell your Personal Data. We only share information in the following limited circumstances:
+Service Providers: With trusted third parties who assist us in operating our website (e.g., cloud hosting providers, payment processors, email services), provided they agree to keep this information confidential.
+Legal Compliance: If required by law, regulation, or legal process (e.g., a court order or subpoena), or to protect the rights, property, or safety of VocoWeb, our users, or others.
+Business Transfers: In connection with a merger, sale of company assets, or acquisition.
+6. Data Retention & Export
+Retention: We retain your account information and project data for as long as your account is active.
+The "Eject Button": Unlike competitors who lock you in, you may export your full source code (GitHub/ZIP) and database dumps at any time.
+Deletion: If you delete your account, your Personal Data and Project Data are permanently removed from our active databases within 30 days. Backups may be retained for a limited period for disaster recovery purposes before being overwritten.
+7. Security of Your Data
+We implement enterprise-grade security measures to protect your data:
+Encryption: Data is encrypted in transit (SSL/TLS) and at rest.
+Isolation: We use MicroVM technology to strictly isolate your application's environment from other tenants.
+Access Control: Access to your private data by our staff is restricted to necessary personnel and logged.
+However, no method of transmission over the Internet is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee its absolute security.
+
+9. Children's Privacy
+Our Service is not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13.
+
+10. Changes to This Policy
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date."
+
+11. Contact Us
+If you have any questions about this Privacy Policy or our data practices, please contact us:
+Email: shyamol@fusionfocus.in

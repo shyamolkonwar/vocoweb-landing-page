@@ -10,29 +10,29 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
     {
-        question: "What exactly is the 'Merchant of Record' feature?",
+        question: "Do you charge for \"tokens\" or \"credits\" when I edit my app?",
         answer:
-            "When you use VocoWeb's Merchant of Record, we become the legal seller of your product. This means we handle all payment processing, sales tax collection, VAT compliance, and chargeback disputes. You never have to worry about Stripe bans or PayPal freezes, we take on that risk so you can focus on building your product.",
+            "No. We believe metered billing discourages perfection. Your monthly subscription covers your build time. You shouldn't be penalized for iterating on your product.",
     },
     {
-        question: "Can I migrate my existing project to VocoWeb?",
+        question: "Is it really unlimited? What if I build all day?",
         answer:
-            "Yes! We support migrations from most major platforms and frameworks. Our team will work with you to ensure a smooth transition. For complex migrations, Founder plan members get dedicated migration support at no extra cost.",
+            "Yes! We want you to iterate until perfection. \"Unlimited\" applies to one human building at human speed. We simply have a Fair Use Policy to prevent bots, automated scripts, and account sharing. As long as you are a real person building a real business, you'll never hit a limit.",
     },
     {
-        question: "How is VocoWeb different from Bubble, Webflow, or other no-code tools?",
+        question: "What happens if I want to leave VocoWeb?",
         answer:
-            "Unlike traditional no-code tools, VocoWeb generates real, production-ready code that you own. We don't lock you into a proprietary platform. Plus, we include business infrastructure (payments, compliance, analytics) that other tools treat as 'integrations you figure out yourself.'",
+            "You take your business with you. On the Founder plan, you can export your entire codebase. We use standard stacks (React/Node/Postgres), so your code runs anywhere, not just on our proprietary systems.",
     },
     {
-        question: "What if I need custom features or integrations?",
+        question: "How is this different from Lovable or Bolt?",
         answer:
-            "VocoWeb is built for extensibility. You can add custom code, integrate third-party APIs, and modify anything. Founder plan members also get access to our AI coding assistant that can help build custom features based on your specifications.",
+            "Those tools are fantastic for frontend design but struggle with backend logic and deployment. VocoWeb puts infrastructure first—we handle the \"boring\" hard stuff (payments, database security, hosting) so the AI can focus on your unique features.",
     },
     {
-        question: "Is my data secure?",
+        question: "Is my data safe?",
         answer:
-            "Absolutely. All projects run on isolated MicroVMs with enterprise-grade security. We use end-to-end encryption, and never access your customer data. Your code and data are yours, we just provide the infrastructure.",
+            "Yes. Unlike platforms that mix tenant data, VocoWeb deploys your project to its own isolated MicroVM. We also perform automated daily backups so you never lose progress due to an AI hallucination.",
     },
 ];
 
@@ -49,7 +49,7 @@ export default function FAQSection() {
     };
 
     return (
-        <section className="py-20 border-b border-[#E5E5E5]">
+        <section id="faq" className="py-20 border-b border-[#E5E5E5]">
             <div className="container max-w-3xl">
                 {/* Section Header */}
                 <div className="text-center mb-12">

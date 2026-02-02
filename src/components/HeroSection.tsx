@@ -19,13 +19,14 @@ export default function HeroSection() {
 
                     {/* Headline */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.03em] text-[#0A0A0A] max-w-4xl leading-tight">
-                        Stop Building &apos;Frankenstein&apos; Apps That Get Banned by Stripe.
+                        Stop Paying AI To Fix Its Own Mistakes.
                     </h1>
 
                     {/* Sub-headline */}
                     <p className="mt-6 text-lg md:text-xl text-[#525252] max-w-[600px] leading-relaxed">
-                        Most &quot;AI app builders&quot; give you code and wish you luck. VocoWeb builds the entire
-                        business infrastructure, from payments to compliance. Ship products that actually work.
+                        Most builders trap you in a loop of broken code and metered billing.
+                        But we provide the flat-rate infrastructure payments,
+                        auth, and hosting so you can build a business, not just a toy.
                     </p>
 
                     {/* Action Array */}
@@ -40,7 +41,7 @@ export default function HeroSection() {
 
                         {/* Secondary Data */}
                         <p className="mt-4 font-mono text-xs tracking-[0.05em] text-[#525252]">
-                            NO CREDIT CARD REQUIRED
+                            No Credit Card Required • No &quot;Token&quot; Anxiety
                         </p>
                     </div>
                 </div>

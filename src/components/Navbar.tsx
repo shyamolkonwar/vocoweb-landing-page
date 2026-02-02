@@ -35,10 +35,10 @@ export default function Navbar() {
                                 Pricing
                             </Link>
                             <Link
-                                href="#login"
+                                href="#faq"
                                 className="font-mono text-xs uppercase tracking-[0.05em] text-[#525252] hover:text-[#0A0A0A] transition-colors"
                             >
-                                Login
+                                FAQ
                             </Link>
                         </div>
 
