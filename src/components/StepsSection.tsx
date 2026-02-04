@@ -43,7 +43,7 @@ const steps: Step[] = [
         subtitle: "All the Business Tools You Need, Built In",
         problem: "Even if you build a great app, you still need to handle payments, manage users, stay legally compliant, and understand what's working. Most founders get stuck here.",
         solution: "Your control center for everything that happens after you launch:",
-        details: "💰 Payment Processing & Tax Compliance: We handle global payments and tax requirements. 👥 User Management: Professional login systems. 📊 Business Analytics: See who's using your app. 🔒 Automatic Backups & Safety: Daily backups and one-click rollback.",
+        details: "Payment Processing & Tax Compliance: We handle global payments and tax requirements. User Management: Professional login systems. Business Analytics: See who's using your app. Automatic Backups & Safety: Daily backups and one-click rollback.",
         benefit: "Sleep better at night."
     }
 ];
