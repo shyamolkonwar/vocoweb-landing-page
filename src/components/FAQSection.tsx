@@ -10,29 +10,34 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
     {
-        question: "Do you charge for \"tokens\" or \"credits\" when I edit my app?",
+        question: "Do you charge extra when I make changes to my app?",
         answer:
-            "No. We believe metered billing discourages perfection. Your monthly subscription covers your build time. You shouldn't be penalized for iterating on your product.",
+            "Nope. Build and rebuild as much as you want. No hidden fees, no token counting, no surprise bills.",
     },
     {
-        question: "Is it really unlimited? What if I build all day?",
+        question: "What if I want to leave VocoWeb?",
         answer:
-            "Yes! We want you to iterate until perfection. \"Unlimited\" applies to one human building at human speed. We simply have a Fair Use Policy to prevent bots, automated scripts, and account sharing. As long as you are a real person building a real business, you'll never hit a limit.",
+            "Export your complete source code to GitHub or download it as a ZIP file. You own everything you build. We're confident you'll stay because we're helpful, not because we're holding your code hostage.",
     },
     {
-        question: "What happens if I want to leave VocoWeb?",
+        question: "How is this different from other AI builders?",
         answer:
-            "You take your business with you. On the Founder plan, you can export your entire codebase. We use standard stacks (React/Node/Postgres), so your code runs anywhere, not just on our proprietary systems.",
+            "Most platforms only help you write code. We help you figure out what to build (research), how to build it (planning), actually build it (development), and run it as a business (payments, users, analytics). It's the complete journey in one place.",
     },
     {
-        question: "How is this different from Lovable or Bolt?",
+        question: "I'm not technical. Can I actually use this?",
         answer:
-            "Those tools are fantastic for frontend design but struggle with backend logic and deployment. VocoWeb puts infrastructure first—we handle the \"boring\" hard stuff (payments, database security, hosting) so the AI can focus on your unique features.",
+            "That's exactly who we built this for. You don't need to know about servers, databases, or code architecture. We handle the technical complexity so you can focus on building something people want.",
     },
     {
         question: "Is my data safe?",
         answer:
-            "Yes. Unlike platforms that mix tenant data, VocoWeb deploys your project to its own isolated MicroVM. We also perform automated daily backups so you never lose progress due to an AI hallucination.",
+            "Yes. Your app runs in its own isolated environment with daily backups and enterprise-grade security. We take this seriously.",
+    },
+    {
+        question: "What happens to my research and planning if I leave?",
+        answer:
+            "All your research reports, product plans, and documentation can be exported along with your code. Nothing is locked away.",
     },
 ];
 

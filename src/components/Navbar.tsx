@@ -23,10 +23,10 @@ export default function Navbar() {
                     <div className="flex items-center gap-8">
                         <div className="hidden md:flex items-center gap-6">
                             <Link
-                                href="#manifesto"
+                                href="#about"
                                 className="font-mono text-xs uppercase tracking-[0.05em] text-[#525252] hover:text-[#0A0A0A] transition-colors"
                             >
-                                Manifesto
+                                About
                             </Link>
                             <Link
                                 href="#pricing"

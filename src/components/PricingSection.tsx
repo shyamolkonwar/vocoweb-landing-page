@@ -5,19 +5,11 @@ import { Check } from "lucide-react";
 import LowIntentModal from "./modals/LowIntentModal";
 import HighIntentForm from "./modals/HighIntentForm";
 
-interface PlanFeature {
-    text: string;
-    included: boolean;
-}
-
 interface Plan {
     name: string;
-    price: {
-        monthly: number;
-        yearly: number;
-    };
     description: string;
-    features: PlanFeature[];
+    price: number;
+    features: string[];
     cta: string;
     recommended?: boolean;
 }
@@ -25,37 +17,31 @@ interface Plan {
 const plans: Plan[] = [
     {
         name: "Builder",
-        price: {
-            monthly: 39,
-            yearly: 31,
-        },
-        description: "For indie hackers validating ideas.",
+        description: "For people testing ideas",
+        price: 39,
         features: [
-            { text: "3 Active Projects", included: true },
-            { text: "Unlimited AI Iterations (No Token Fees)", included: true },
-            { text: "Basic Analytics", included: true },
-            { text: "Community Support", included: true },
-            { text: "Standard MicroVM Deployment", included: true },
-            { text: "SSL Certificates", included: true },
+            "3 Active Projects",
+            "Unlimited Building (No Token Fees)",
+            "Basic Analytics",
+            "Community Support",
+            "One-Click Deployment",
+            "SSL Security Included",
         ],
         cta: "Start Building",
     },
     {
         name: "Founder",
-        price: {
-            monthly: 79,
-            yearly: 63,
-        },
-        description: "For entrepreneurs ready to sell.",
+        description: "For people ready to make money",
+        price: 79,
         features: [
-            { text: "Unlimited Projects (10 Active Deploys)", included: true },
-            { text: "Unlimited AI Iterations (No Token Fees)", included: true },
-            { text: "Merchant of Record Integration (Payments Ready)", included: true },
-            { text: "Priority Support (Talk to a Founder)", included: true },
-            { text: "Full Code Export (GitHub Sync)", included: true },
-            { text: "Custom Domains", included: true },
+            "Unlimited Projects (10 Live Apps)",
+            "Unlimited Building (No Token Fees)",
+            "Payment Processing Enabled",
+            "Priority Support (Talk to Real People)",
+            "Export to GitHub",
+            "Custom Domain Names",
         ],
-        cta: "Start Business",
+        cta: "Start Your Business",
         recommended: true,
     },
 ];
@@ -75,19 +61,16 @@ export default function PricingSection() {
 
     return (
         <>
-            <section id="pricing" className="py-20 border-b border-[#E5E5E5]">
+            <section id="pricing" className="py-20 border-b border-[#E5E5E5] bg-[#FAFAFA]">
                 <div className="container">
                     {/* Section Header */}
                     <div className="text-center mb-12">
                         <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#525252] block mb-4">
                             PRICING
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] text-[#0A0A0A] mb-4">
-                            Predictable Pricing. No Surprise Bills.
+                        <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] text-[#0A0A0A]">
+                            Pay for Results, Not Attempts
                         </h2>
-                        <p className="text-[#525252] text-lg">
-                            We charge for outcomes, not attempts.
-                        </p>
                     </div>
 
                     {/* Billing Toggle */}
@@ -126,9 +109,9 @@ export default function PricingSection() {
                         {plans.map((plan, index) => (
                             <div
                                 key={index}
-                                className={`border p-8 relative ${plan.recommended
+                                className={`p-8 relative bg-white ${plan.recommended
                                     ? "border-[#0A0A0A] border-2"
-                                    : "border-[#E5E5E5]"
+                                    : "border border-[#E5E5E5]"
                                     }`}
                                 style={{ borderRadius: "2px" }}
                             >
@@ -148,12 +131,12 @@ export default function PricingSection() {
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-[#525252] mb-6">{plan.description}</p>
+                                <p className="text-[#525252] mb-6 italic">{plan.description}</p>
 
                                 {/* Price */}
                                 <div className="mb-8">
                                     <span className="text-4xl font-bold tracking-[-0.03em] text-[#0A0A0A]">
-                                        ${isYearly ? plan.price.yearly : plan.price.monthly}
+                                        ${isYearly ? Math.floor(plan.price * 0.8) : plan.price}
                                     </span>
                                     <span className="text-[#525252] ml-1">/mo</span>
                                 </div>
@@ -167,7 +150,7 @@ export default function PricingSection() {
                                         >
                                             <Check className="w-5 h-5 text-[#0A0A0A] flex-shrink-0 mt-0.5" />
                                             <span className="text-[#525252] text-sm">
-                                                {feature.text}
+                                                {feature}
                                             </span>
                                         </li>
                                     ))}

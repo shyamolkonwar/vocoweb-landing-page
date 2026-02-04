@@ -1,12 +1,12 @@
 import { Check } from "lucide-react";
 
 const features = [
-    "Managed MicroVM Hosting (Isolated & Secure)",
-    "Merchant of Record Module (Stripe/PayPal wrapper)",
-    "Automated Daily Backups (Never lose data)",
-    "One-Click Rollbacks (Undo mistakes instantly)",
-    "Zero Metered AI Fees (Iterate without fear)",
-    "Full Source Export (No vendor lock-in)",
+    "Secure, Isolated Hosting – Your app runs safely, separate from everyone else",
+    "Payment Processing Ready – Accept money without setting up payment processors",
+    "Automatic Daily Backups – Never lose your work",
+    "One-Click Undo – Fix mistakes instantly",
+    "Unlimited Building – No metered fees, no token anxiety",
+    "Full Code Export – Download everything, anytime",
 ];
 
 export default function ProductVisualization() {
@@ -25,7 +25,7 @@ export default function ProductVisualization() {
 
                 {/* Dashboard Wireframe */}
                 <div
-                    className="border border-[#E5E5E5] mb-12 overflow-hidden"
+                    className="border border-[#E5E5E5] mb-12 overflow-hidden bg-white"
                     style={{ borderRadius: "2px" }}
                 >
                     {/* Header Bar */}
@@ -37,63 +37,47 @@ export default function ProductVisualization() {
                     </div>
 
                     {/* Content Area */}
-                    <div className="flex">
+                    <div className="flex h-[400px]">
                         {/* Sidebar */}
-                        <div className="w-48 border-r border-[#E5E5E5] p-4 hidden md:block">
-                            <div className="space-y-3">
-                                <div className="h-4 w-full bg-[#0A0A0A]" style={{ borderRadius: "2px" }}></div>
+                        <div className="w-48 border-r border-[#E5E5E5] p-4 hidden md:block bg-[#FAFAFA]">
+                            <div className="space-y-4">
+                                <div className="h-4 w-full bg-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
                                 <div className="h-4 w-3/4 bg-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
                                 <div className="h-4 w-5/6 bg-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
                                 <div className="h-4 w-2/3 bg-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
-                                <div className="h-4 w-3/4 bg-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
                             </div>
                         </div>
 
                         {/* Main Content */}
-                        <div className="flex-1 p-6">
-                            {/* Stats Row */}
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                                {[1, 2, 3, 4].map((i) => (
-                                    <div
-                                        key={i}
-                                        className="border border-[#E5E5E5] p-4"
-                                        style={{ borderRadius: "2px" }}
-                                    >
-                                        <div className="h-3 w-16 bg-[#E5E5E5] mb-2" style={{ borderRadius: "2px" }}></div>
-                                        <div className="h-6 w-12 bg-[#0A0A0A]" style={{ borderRadius: "2px" }}></div>
-                                    </div>
-                                ))}
+                        <div className="flex-1 p-8 bg-white">
+                            <div className="grid grid-cols-3 gap-6 mb-8">
+                                <div className="h-24 bg-[#FAFAFA] border border-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
+                                <div className="h-24 bg-[#FAFAFA] border border-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
+                                <div className="h-24 bg-[#FAFAFA] border border-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
                             </div>
-
-                            {/* Chart Placeholder */}
-                            <div
-                                className="border border-[#E5E5E5] p-6 h-40 flex items-end justify-center gap-2"
-                                style={{ borderRadius: "2px" }}
-                            >
-                                {[40, 65, 45, 80, 55, 90, 70, 85].map((height, i) => (
-                                    <div
-                                        key={i}
-                                        className="w-8 bg-[#0A0A0A] opacity-80"
-                                        style={{ height: `${height}%`, borderRadius: "2px" }}
-                                    ></div>
-                                ))}
-                            </div>
+                            <div className="h-48 bg-[#FAFAFA] border border-[#E5E5E5]" style={{ borderRadius: "2px" }}></div>
                         </div>
                     </div>
                 </div>
 
                 {/* Feature List */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {features.map((feature, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center gap-3 p-4 border border-[#E5E5E5]"
-                            style={{ borderRadius: "2px" }}
-                        >
-                            <Check className="w-5 h-5 text-[#0A0A0A] flex-shrink-0" />
-                            <span className="text-[#525252] text-sm">{feature}</span>
-                        </div>
-                    ))}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
+                    {features.map((feature, index) => {
+                        const [title, desc] = feature.split(" – ");
+                        return (
+                            <div
+                                key={index}
+                                className="flex items-start gap-3 p-4 border border-[#E5E5E5] hover:border-[#0A0A0A] transition-colors bg-white"
+                                style={{ borderRadius: "2px" }}
+                            >
+                                <Check className="w-5 h-5 text-[#0A0A0A] flex-shrink-0 mt-0.5" />
+                                <div className="text-sm">
+                                    <span className="font-bold text-[#0A0A0A]">{title}</span>
+                                    {desc && <span className="text-[#525252] block mt-1">{desc}</span>}
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>

@@ -19,14 +19,12 @@ export default function HeroSection() {
 
                     {/* Headline */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.03em] text-[#0A0A0A] max-w-4xl leading-tight">
-                        Stop Paying AI To Fix Its Own Mistakes.
+                        Most People Build Apps That Nobody Wants.
                     </h1>
 
                     {/* Sub-headline */}
-                    <p className="mt-6 text-lg md:text-xl text-[#525252] max-w-[600px] leading-relaxed">
-                        Most builders trap you in a loop of broken code and metered billing.
-                        But we provide the flat-rate infrastructure payments,
-                        auth, and hosting so you can build a business, not just a toy.
+                    <p className="mt-6 text-lg md:text-xl text-[#525252] max-w-[700px] leading-relaxed">
+                        We help you find the right idea, plan it properly, and turn it into a real business—all in one place.
                     </p>
 
                     {/* Action Array */}
@@ -41,7 +39,7 @@ export default function HeroSection() {
 
                         {/* Secondary Data */}
                         <p className="mt-4 font-mono text-xs tracking-[0.05em] text-[#525252]">
-                            No Credit Card Required • No &quot;Token&quot; Anxiety
+                            No Credit Card Required • No Guesswork • No Wasted Effort
                         </p>
                     </div>
                 </div>
