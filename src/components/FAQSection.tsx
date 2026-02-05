@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { trackEvent } from "@/lib/analytics";
+
 
 interface FAQItem {
     question: string;
@@ -17,7 +17,7 @@ const faqItems: FAQItem[] = [
     {
         question: "What if I want to leave VocoWeb?",
         answer:
-            "Export your complete source code to GitHub or download it as a ZIP file. You own everything you build. We're confident you'll stay because we're helpful, not because we're holding your code hostage.",
+            "Export your complete project files or download them as a ZIP file. You own everything you build. We're confident you'll stay because we're helpful, not because we're holding your work hostage.",
     },
     {
         question: "How is this different from other AI builders?",
@@ -27,7 +27,7 @@ const faqItems: FAQItem[] = [
     {
         question: "I'm not technical. Can I actually use this?",
         answer:
-            "That's exactly who we built this for. You don't need to know about servers, databases, or code architecture. We handle the technical complexity so you can focus on building something people want.",
+            "That's exactly who we built this for. You don't need any technical background. We handle all the complex setup so you can focus on building something people want.",
     },
     {
         question: "Is my data safe?",
@@ -48,9 +48,7 @@ export default function FAQSection() {
         const newIndex = openIndex === index ? null : index;
         setOpenIndex(newIndex);
 
-        if (newIndex !== null) {
-            trackEvent("FAQ_EXPAND", { question: faqItems[index].question });
-        }
+
     };
 
     return (

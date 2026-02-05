@@ -23,7 +23,7 @@ Device Data: IP address, operating system, and browser type.
 Cookies: We use cookies to manage sessions and authentication. We do not use third-party tracking cookies to sell your data to advertisers.
 3. How We Use Your Information
 We use your data for the following specific purposes:
-To Provide the Service: Creating accounts, spinning up your isolated MicroVMs, and managing your deployments.
+To Provide the Service: Creating accounts, spinning up your isolated Webcontainers, and managing your deployments.
 To Power the AI Builder: Your prompts and code context are sent to our AI providers (e.g., Anthropic, OpenAI) solely for the purpose of generating your requested code.
 To Process Payments: Facilitating transactions through our Merchant of Record infrastructure.
 To Ensure Security: Monitoring for bot attacks, abuse of our "Unlimited Iteration" policy, and unauthorized access attempts.
@@ -32,7 +32,7 @@ To Communicate: Sending transactional emails (invoices, password resets) and pro
 We know you are building a business, not just a toy. Your intellectual property is paramount.
 Ownership: You retain full ownership of all code, assets, and databases generated within VocoWeb.
 AI Training Policy: We do not use your private project code to train our public AI models. Your proprietary algorithms and business logic remain confidential.
-Isolation: Your code runs in isolated MicroVMs. It is not shared with other users, nor does it "leak" into a shared knowledge base.
+Isolation: Your code runs in isolated Webcontainers. It is not shared with other users, nor does it "leak" into a shared knowledge base.
 5. Sharing Your Information
 We do not sell your Personal Data. We only share information in the following limited circumstances:
 Service Providers: With trusted third parties who assist us in operating our website (e.g., cloud hosting providers, payment processors, email services), provided they agree to keep this information confidential.
@@ -45,7 +45,7 @@ Deletion: If you delete your account, your Personal Data and Project Data are pe
 7. Security of Your Data
 We implement enterprise-grade security measures to protect your data:
 Encryption: Data is encrypted in transit (SSL/TLS) and at rest.
-Isolation: We use MicroVM technology to strictly isolate your application's environment from other tenants.
+Isolation: We use Webcontainer technology to strictly isolate your application's environment from other tenants.
 Access Control: Access to your private data by our staff is restricted to necessary personnel and logged.
 However, no method of transmission over the Internet is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee its absolute security.
 
@@ -57,4 +57,4 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 11. Contact Us
 If you have any questions about this Privacy Policy or our data practices, please contact us:
-Email: shyamol@fusionfocus.in
+Email: office@vocoweb.in

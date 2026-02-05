@@ -1,0 +1,92 @@
+The Operating System for Business.
+Phase 1 is Live.
+Sub-headline: Most AI tools generate code. VocoWeb is architecting the first end-to-end platform to validate, build, and operate sustainable companies. The VocoBuild Engine is now open for access.
+
+Primary Button: [ START BUILDING ]
+
+Secondary Text (Small, Monospace): STATUS: BUILDER [ONLINE] • RESEARCH [TRAINING] • FOUNDRY [LOCKED]
+
+THE MANIFESTO (Replacing "The Problem")
+(Visual: Minimalist text on a dark background. High contrast.)
+
+Headline:
+
+Code is a Commodity. Structure is the Asset.
+Body Copy: The modern founder is lost in fragmentation. You research in ChatGPT, plan in Notion, code in Replit, and struggle with AWS. Context evaporates. Momentum dies.
+
+We are building the solution: A unified Business Operating System.
+
+We are not releasing a toy. We are releasing a standard. We are rolling out the VocoWeb architecture in three phases. You are joining us at Phase 1.
+
+THE MASTER PLAN (The Product Grid)
+(Design Note: This uses the "Ghost UI" technique. The Builder is bright. The others are "Loading/Constructing" to show the roadmap.)
+
+01. VocoResearch [ PHASE 2: IN DEVELOPMENT ]
+Headline: Intelligence, Not Intuition. Copy: We are training deep-search agents to validate market demand before you commit resources. Status: Deploying Q3 2026. Join Phase 1 to secure priority access.
+
+02. VocoStrategy [ PHASE 2: IN DEVELOPMENT ]
+Headline: The AI Product Manager. Copy: Converting unstructured notes into formal Product Requirement Documents (PRDs) and database schemas. No more vague prompts. Status: In internal beta testing.
+
+03. VocoBuild [ PHASE 1: LIVE NOW ]
+Headline: Industrial-Grade Generation. Copy: The core of the system is ready. Generate clean, production-ready React & Node.js applications. The Difference:
+Zero Token Metering: Build without watching a ticking clock.
+Webcontainer Architecture: Your app runs in isolated Firecracker VMs, not fragile sandboxes.
+Export Native: You own the code. Download the full repository at any time.
+04. The Foundry [ PHASE 3: COMING SOON ]
+Headline: Operational Sovereignty. Copy: The integrated backbone for global tax, payments, and identity management. Status: Architecting the financial layer.
+
+THE "WHY NOW?" BLOCK
+(Addressing the objection: "Why should I use you if the other stuff isn't ready?")
+
+Headline:
+
+Build Today. Ready for Tomorrow.
+Copy: Why start with VocoWeb's builder now? Because the applications you generate today are being structured for the ecosystem of tomorrow.
+
+When VocoResearch and The Foundry go live, your existing VocoWeb codebase will integrate seamlessly. Don't build legacy code on other platforms. Build future-proof code here.
+
+THE SPECS (The "Apple" Technical Block)
+(Visual: Monospace font, grid layout. Pure facts.)
+
+INFRASTRUCTURE	FINANCE
+Firecracker Webcontainers	Stripe Connect Ready
+< 100ms Cold Start	Merchant of Record (Coming Soon)
+CODE STANDARDS	FREEDOM
+React / Node.js	Full GitHub Export
+TypeScript Native	Docker Container Support
+LIMITS	SECURITY
+Unmetered Generation	SOC 2 (Roadmap)
+Unlimited Projects	Isolated Environments
+PRICING
+(Keep it simple. You are selling access to the "Builder" + "The Future".)
+
+Headline:
+
+Early Access Pricing.
+Card 1: The Builder (Monthly) $39/mo
+Access: VocoBuild Engine (Live)
+Capacity: 3 Active Projects
+Standard: Unlimited Generations (No Token Anxiety)
+Export: Full Code Download
+Bonus: Waitlist Priority for VocoResearch
+Card 2: The Founder (Monthly) $79/mo
+Access: VocoBuild Engine (Live)
+Capacity: Unlimited Projects
+Standard: Priority Generation Queue
+Export: Real-time GitHub Sync
+Bonus: Alpha Access to VocoStrategy (When Available)
+FAQ (Honest & Direct)
+Q: Why are some features locked? A: We are building a Business Operating System, not just a chatbot. We refuse to release the Intelligence Layer (Research/Strategy) until it meets our standard of accuracy. Phase 1 is focused purely on the Build Engine.
+
+Q: Can I really export my code? A: Yes. You are building a business, not renting a room. You can export your full React/Node.js codebase to GitHub at any time.
+
+Q: How is the "Builder" different from others? A: Most builders run in shared, fragile web environments. VocoBuild provisions real Webcontainer infrastructure for every project. It is closer to AWS than it is to a playground.
+
+Q: What happens when Phase 2 launches? A: Active subscribers will receive automatic access to VocoResearch and VocoStrategy tools as they roll out, likely at no additional cost for early adopters.
+
+FOOTER
+VocoWeb [BETA] Architecting the future of automated enterprise.
+
+[ Twitter/X ] [ Discord ] [ Roadmap ]
+
+© 2026 VocoWeb. Status: Phase 1 Operational.

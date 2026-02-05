@@ -1,25 +1,22 @@
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import StepsSection from "@/components/StepsSection";
-import WhyStaySection from "@/components/WhyStaySection";
-import ProductVisualization from "@/components/ProductVisualization";
+import BentoGridSection from "@/components/BentoGridSection";
+import XRaySection from "@/components/XRaySection";
 import PricingSection from "@/components/PricingSection";
-import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <SmoothScrollProvider>
       <Navbar />
-      <HeroSection />
-      <ProblemSection />
-      <StepsSection />
-      <WhyStaySection />
-      <ProductVisualization />
-      <PricingSection />
-      <FAQSection />
-      <Footer />
-    </main>
+      <main className="min-h-screen bg-void-black">
+        <HeroSection />
+        <BentoGridSection />
+        <XRaySection />
+        <PricingSection />
+        <Footer />
+      </main>
+    </SmoothScrollProvider>
   );
 }

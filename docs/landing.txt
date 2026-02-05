@@ -104,7 +104,7 @@
 
 4. **Solution Block:**
 * Label: `VOCOWEB SOLUTION:` (Mono font).
-* Text: Bolded solution name ("Managed MicroVMs") followed by explanation.
+* Text: Bolded solution name ("Managed Webcontainers") followed by explanation.
 
 
 

@@ -1,43 +1,48 @@
 @import "tailwindcss";
 
 /* ============================================
-   VocoWeb Design Tokens
-   Fusion Focus Design System v1.0
+   VocoWeb Industrial Luxury Design System
+   Titanium Trust Visual Identity
    ============================================ */
 
 :root {
-  /* Colors */
-  --color-canvas: #FFFFFF;
-  --color-surface: #FAFAFA;
-  --color-border: #E5E5E5;
-  --color-text-primary: #0A0A0A;
-  --color-text-secondary: #525252;
-  --color-accent-green: #22C55E;
-  --color-black: #000000;
-  --color-white: #FFFFFF;
+  /* Industrial Luxury Color Palette */
+  --color-void-black: #050505;
+  --color-tungsten-grey: #1A1A1A;
+  --color-tungsten-light: #333333;
+  --color-signal-white: #F5F5F7;
+  --color-safety-orange: #FF4D00;
+  
+  /* Secondary Colors */
+  --color-border: #2A2A2A;
+  --color-text-primary: #F5F5F7;
+  --color-text-secondary: #A0A0A0;
+  --color-text-muted: #666666;
 
   /* Typography */
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains), monospace;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', monospace;
 
   /* Spacing */
-  --container-max-width: 1152px;
-  --nav-height: 64px;
+  --container-max-width: 1280px;
+  --nav-height: 72px;
 
-  /* Corners - Strict 0px or 2px */
-  --radius-none: 0px;
-  --radius-sm: 2px;
+  /* Grid System */
+  --grid-border: 1px;
+  
+  /* Film Grain */
+  --grain-opacity: 0.02;
 }
 
 @theme inline {
-  --color-background: var(--color-canvas);
-  --color-foreground: var(--color-text-primary);
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains);
+  --color-background: var(--color-void-black);
+  --color-foreground: var(--color-signal-white);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
 /* ============================================
-   Base Styles
+   Base Styles - Industrial Luxury
    ============================================ */
 
 * {
@@ -49,14 +54,34 @@ html {
 }
 
 body {
-  background: var(--color-canvas);
-  color: var(--color-text-primary);
+  background: var(--color-void-black);
+  color: var(--color-signal-white);
   font-family: var(--font-sans);
   line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+}
+
+/* Film Grain Texture Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.02) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 4px 4px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: var(--grain-opacity);
 }
 
 /* ============================================
-   Typography Classes
+   Typography Classes - Industrial Luxury
    ============================================ */
 
 .font-sans {
@@ -67,97 +92,152 @@ body {
   font-family: var(--font-mono);
 }
 
-/* Heading Styles */
+/* Heading Styles - Heavy, Absolute */
 .heading-xl {
   font-family: var(--font-sans);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--color-text-primary);
+  font-weight: 800;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: var(--color-signal-white);
 }
 
 .heading-lg {
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.1;
   letter-spacing: -0.03em;
-  color: var(--color-text-primary);
+  color: var(--color-signal-white);
 }
 
-/* Body Text */
+.heading-md {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-signal-white);
+}
+
+/* Body Text - Precision */
 .body-text {
   font-family: var(--font-sans);
   color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
-/* Metadata/Eyebrows */
+.body-text-large {
+  font-family: var(--font-sans);
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* Metadata/Eyebrows - Technical Spec */
 .eyebrow {
   font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-text-secondary);
+  color: var(--color-safety-orange);
 }
 
 /* ============================================
-   Component Classes
+   Component Classes - Industrial Luxury
    ============================================ */
 
 .container {
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .section-border {
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  border-top: var(--grid-border) solid var(--color-border);
+  border-bottom: var(--grid-border) solid var(--color-border);
 }
 
 .border-separator {
   border-color: var(--color-border);
 }
 
-/* Button Styles */
+/* Grid System - Mathematical Precision */
+.grid-border {
+  border: var(--grid-border) solid var(--color-border);
+}
+
+.grid-border-t {
+  border-top: var(--grid-border) solid var(--color-border);
+}
+
+.grid-border-b {
+  border-bottom: var(--grid-border) solid var(--color-border);
+}
+
+.grid-border-l {
+  border-left: var(--grid-border) solid var(--color-border);
+}
+
+.grid-border-r {
+  border-right: var(--grid-border) solid var(--color-border);
+}
+
+/* Button Styles - Industrial */
 .btn-primary {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-safety-orange);
+  color: var(--color-void-black);
   font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  transition: opacity 0.15s ease;
+  transition: all 0.2s ease;
+  padding: 1rem 2rem;
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
+  background-color: #FF6B1A;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: transparent;
+  color: var(--color-signal-white);
   font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  border: 1px solid var(--color-black);
+  border: var(--grid-border) solid var(--color-border);
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: all 0.2s ease;
+  padding: 1rem 2rem;
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-surface);
+  background-color: var(--color-tungsten-grey);
+  border-color: var(--color-signal-white);
 }
 
-/* Sharp corners - no pills */
+/* Sharp corners - no pills, pure geometry */
 .sharp-corners {
-  border-radius: var(--radius-none);
+  border-radius: 0;
 }
 
-.rounded-sm-corners {
-  border-radius: var(--radius-sm);
+/* Glass Effect for Bento Grid */
+.glass-effect {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: var(--grid-border) solid var(--color-border);
 }
 
 /* ============================================
@@ -190,10 +270,46 @@ body {
 }
 
 /* ============================================
+   Color Utilities
+   ============================================ */
+
+.bg-void-black {
+  background-color: var(--color-void-black);
+}
+
+.bg-tungsten-grey {
+  background-color: var(--color-tungsten-grey);
+}
+
+.bg-safety-orange {
+  background-color: var(--color-safety-orange);
+}
+
+.text-void-black {
+  color: var(--color-void-black);
+}
+
+.text-signal-white {
+  color: var(--color-signal-white);
+}
+
+.text-safety-orange {
+  color: var(--color-safety-orange);
+}
+
+.border-safety-orange {
+  border-color: var(--color-safety-orange);
+}
+
+.border-tungsten-grey {
+  border-color: var(--color-tungsten-grey);
+}
+
+/* ============================================
    Selection
    ============================================ */
 
 ::selection {
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-void-black);
+  color: var(--color-signal-white);
 }
