@@ -19,9 +19,9 @@ export default function Footer() {
       </motion.div>
 
       <div className="container max-w-6xl mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
           {/* Brand Column */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6 group w-fit">
               <div className="relative w-8 h-8">
                 <Image
