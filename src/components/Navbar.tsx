@@ -29,6 +29,12 @@ export default function Navbar() {
                 {/* Nav Links */}
                 <div className="hidden md:flex items-center gap-4">
                     <Link
+                        href="/brochure"
+                        className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
+                    >
+                        Brochure
+                    </Link>
+                    <Link
                         href="#architecture"
                         className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
                     >

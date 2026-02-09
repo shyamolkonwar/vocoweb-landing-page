@@ -26,9 +26,10 @@ const pricingPlans = [
     description: 'Perfect for starting your journey',
     features: [
       'VocoBuild Engine (Live)',
-      '3 Active Projects',
-      'Unlimited Generations',
+      '3 Live Deployments',
+      'Unlimited Standard Generations*',
       'Full Code Download',
+      'Stripe Payments Integration',
       'Waitlist Priority for VocoResearch'
     ],
     cta: 'Start Building',
@@ -45,6 +46,7 @@ const pricingPlans = [
       'Unlimited Projects',
       'Priority Generation Queue',
       'Real-time Project Sync',
+      'Stripe Payments Integration',
       'Alpha Access to VocoStrategy'
     ],
     cta: 'Join as Founder',
@@ -155,6 +157,13 @@ export default function PricingSection() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Fair Use Disclaimer */}
+        <div className="text-center mb-20">
+          <p className="text-xs text-gray-500">
+            * Unlimited Standard Generations subject to Fair Use Policy. Turbo Mode credits available for complex logic.
+          </p>
         </div>
 
         {/* Enterprise Card */}
