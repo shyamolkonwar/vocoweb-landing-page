@@ -74,7 +74,7 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              VocoWeb • Build for Good
+              VocoWeb
             </motion.div>
 
             <motion.h1
@@ -83,20 +83,27 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              The Business
+              The Era of
               <br />
-              Operating System
+              Sovereign Infrastructure
             </motion.h1>
 
             <motion.p
-              className="body-text-large max-w-3xl mx-auto mb-12 text-gray-300"
+              className="body-text-large max-w-3xl mx-auto mb-6 text-gray-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
             >
-              From concept to IPO on a single, secure foundation.
-              <br />
-              Most AI tools generate code. VocoWeb architects the first end-to-end platform to validate, build, and operate sustainable companies.
+              Automated Enterprise. Industrial Scale.
+            </motion.p>
+
+            <motion.p
+              className="body-text max-w-3xl mx-auto mb-12 text-gray-400"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.55, duration: 0.6 }}
+            >
+              Code generation is a commodity. Operational Sovereignty is the asset. VocoWeb architects, deploys, and governs scalable software companies without human intervention.
             </motion.p>
 
             <motion.div
@@ -114,10 +121,10 @@ export default function HeroSection() {
                 })}
                 className="btn-primary"
               >
-                Start Building
+                Start The Foundry
               </a>
               <div className="font-mono text-sm text-gray-400">
-                STATUS: BUILDER [ONLINE]
+                Phase 1 Live
               </div>
             </motion.div>
           </motion.div>
@@ -213,7 +220,6 @@ export default function HeroSection() {
                         <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                         <span className="font-mono text-xs text-gray-300">SYSTEM ONLINE</span>
                       </div>
-                      <div className="font-mono text-xs text-gray-500">Phase 1 Operational</div>
                     </div>
                     <div className="font-mono text-xs text-gray-400">© 2026 VocoWeb.</div>
                   </div>

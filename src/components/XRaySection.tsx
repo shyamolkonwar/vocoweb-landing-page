@@ -6,53 +6,76 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const products = [
   {
     id: '01',
-    name: 'VocoResearch',
-    phase: 'PHASE 2: IN DEVELOPMENT',
-    headline: 'Intelligence, Not Intuition.',
-    copy: 'We are training deep-search agents to validate market demand before you commit resources.',
-    status: 'Deploying Q3 2026. Join Phase 1 to secure priority access.',
-    active: false,
+    name: 'The VocoWeb Kernel™',
+    phase: 'PROPRIETARY TECHNOLOGY',
+    headline: 'Compliance as Code.',
+    copy: 'We do not rely on generative ambiguity for security. We utilize a proprietary, hardened Standard Library (@vocoweb/kernel) that enforces GDPR compliance, Identity Management, and Data Sovereignty at the compiler level. The logic is not written; it is injected.',
+    features: [
+      'GDPR Compliance Enforced',
+      'Identity Management',
+      'Data Sovereignty'
+    ],
+    active: true,
   },
   {
     id: '02',
-    name: 'VocoStrategy',
-    phase: 'PHASE 2: IN DEVELOPMENT',
-    headline: 'The AI Product Manager.',
-    copy: 'Converting unstructured notes into formal Product Requirement Documents (PRDs) and database schemas. No more vague prompts.',
-    status: 'In internal beta testing.',
+    name: 'The Sovereignty Shield',
+    phase: 'DATA RESIDENCY',
+    headline: 'Data Residency Enforcement.',
+    copy: 'For the EU market, compliance is binary. VocoWeb\'s runtime environment strictly enforces data boundaries, ensuring your application meets the rigorous demands of enterprise governance from the first deploy.',
+    status: 'Runtime Enforcement Active',
     active: false,
   },
   {
     id: '03',
-    name: 'VocoBuild',
-    phase: 'PHASE 1: LIVE NOW',
-    headline: 'Industrial-Grade Generation.',
-    copy: 'The core of the system is ready. Generate clean, production-ready React & Node.js applications.',
+    name: 'The Financial Backbone',
+    phase: 'MERCHANT INFRASTRUCTURE',
+    headline: 'Integrated Merchant Infrastructure.',
+    copy: 'Revenue is not an afterthought. Our architecture creates a direct bridge between your application logic and global financial rails. Payments, invoicing, and tax calculation are native to the VocoWeb environment.',
     features: [
-      'Zero Token Metering',
-      'Webcontainer Architecture',
-      'Export Native'
+      'Stripe Integration',
+      'Auto Invoicing',
+      'Tax Calculation'
     ],
-    active: true, // "The Builder is bright"
+    active: false,
   },
   {
     id: '04',
-    name: 'The Foundry',
-    phase: 'PHASE 3: COMING SOON',
-    headline: 'Operational Sovereignty.',
-    copy: 'The integrated backbone for global tax, payments, and identity management.',
-    status: 'Architecting the financial layer.',
+    name: 'The Identity Matrix',
+    phase: 'ACCESS GOVERNANCE',
+    headline: 'Universal Access Governance.',
+    copy: 'Identity is the perimeter. VocoWeb architects do not build login forms; they inherit a banking-grade Identity Provider. Our @vocoweb/tenant system enforces Multi-Tenancy, Role-Based Access Control (RBAC), and Enterprise SSO at the infrastructure level.',
+    status: 'You own the user relationship; we secure the access.',
     active: false,
-  },
+  }
 ];
 
 const specs = [
   {
     category: 'INFRASTRUCTURE',
     items: [
-      { label: 'Architecture', value: 'WebContainer Technology' },
+      { label: 'Runtime', value: 'Serverless Edge Network' },
       { label: 'Cold Start', value: '< 100ms' },
-      { label: 'Isolation', value: 'Complete' }
+      { label: 'Isolation', value: 'Containerized Build Environments' },
+      { label: 'Region', value: 'EU-Native (Frankfurt Default)' }
+    ]
+  },
+  {
+    category: 'COMPLIANCE',
+    items: [
+      { label: 'GDPR', value: 'Automated "Right to be Forgotten"' },
+      { label: 'Legal', value: 'Auto-generated Privacy Policy' },
+      { label: 'Accessibility', value: 'WCAG 2.1 AA Enforced' },
+      { label: 'Export', value: 'Full GitHub Sync (No Lock-in)' }
+    ]
+  },
+  {
+    category: 'COMMERCE',
+    items: [
+      { label: 'Payments', value: 'Stripe Connect Integration' },
+      { label: 'Billing', value: 'Pre-built Pricing UI' },
+      { label: 'Invoicing', value: 'EU-Compliant PDF Generation' },
+      { label: 'Tax', value: 'VAT/GST Logic Ready' }
     ]
   },
   {
@@ -60,23 +83,8 @@ const specs = [
     items: [
       { label: 'Frontend', value: 'React / Node.js' },
       { label: 'Language', value: 'TypeScript Native' },
-      { label: 'Export', value: 'Full GitHub Export' },
-    ]
-  },
-  {
-    category: 'FINANCE',
-    items: [
-      { label: 'Payments', value: 'Stripe Connect Ready' },
-      { label: 'MoR', value: 'Coming Soon' }, // Merchant of Record
-      { label: 'Global Tax', value: 'Automated' }, // Augmented -> Automated (simplified)
-    ]
-  },
-  {
-    category: 'FREEDOM',
-    items: [
       { label: 'Generation', value: 'Unmetered' },
-      { label: 'Projects', value: 'Unlimited' },
-      { label: 'Support', value: 'Docker Container' },
+      { label: 'Projects', value: 'Unlimited' }
     ]
   }
 ];
@@ -110,10 +118,11 @@ export default function XRaySection() {
           viewport={{ once: true, amount: 0.35 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
+          <div className="text-[#FF4D00] font-mono text-xs tracking-[0.2em] uppercase mb-4">THE ARCHITECTURE</div>
           <h2 className="text-[#F5F5F7] text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            The Master Plan
+            Proprietary Technology.
           </h2>
-          <div className="h-1 w-24 bg-[#FF4D00]" />
+          <p className="text-[#666] text-lg">Standardizing the unstandardizable.</p>
         </motion.div>
 
         {/* Product Grid (Ghost UI) */}
@@ -164,19 +173,19 @@ export default function XRaySection() {
               </p>
 
               {/* Footer / Features */}
-              {product.active ? (
+              {product.features && product.features.length > 0 ? (
                 <div className="grid grid-cols-1 gap-2 border-t border-[#333] pt-4 mt-auto">
-                  {product.features?.map(feat => (
+                  {product.features.map(feat => (
                     <div key={feat} className="flex items-center gap-2 text-xs font-mono text-[#CCC]">
                       <span className="text-[#FF4D00]">✓</span> {feat}
                     </div>
                   ))}
                 </div>
-              ) : (
+              ) : product.status ? (
                 <div className="flex items-center gap-2 text-xs font-mono text-[#555] border-t border-[#333]/50 pt-4 mt-auto">
                   <span className="animate-pulse">●</span> {product.status}
                 </div>
-              )}
+              ) : null}
             </motion.div>
           ))}
         </div>

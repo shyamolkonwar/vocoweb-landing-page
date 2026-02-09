@@ -1,0 +1,66 @@
+[ NAVBAR ]
+VOCOWEB | Brochure | ARCHITECTURE | ACCESS | [ DEPLOY ]
+
+[ HERO SECTION - THE POWER FRAME ]
+The Era of Sovereign Infrastructure.
+Automated Enterprise. Industrial Scale.
+Code generation is a commodity. Operational Sovereignty is the asset. VocoWeb is the first Business Operating System designed to architect, deploy, and govern scalable software companies without human intervention. We replace the fragmented stack with a unified, compliant, and revenue-ready Foundry.
+
+[ START THE FOUNDRY ] Status: Phase 1 Operational • Enterprise-Grade MicroVMs
+
+[ THE MACRO THESIS - THE "WHY" ]
+The Structural Transition.
+The market has shifted. The question is no longer "How quickly can we write code?" The question is: "How do we govern a digital asset?"
+
+While the industry focuses on "prototyping," VocoWeb focuses on Commercial Certainty. We have engineered a platform where the code is merely a component; the product is a fully compliant, tax-registered, secure business entity.
+
+We do not build toys. We forge assets.
+
+[ THE ARCHITECTURE - THE "SECRET" ]
+Proprietary Technology.
+Standardizing the unstandardizable.
+
+01. The VocoWeb Kernel™
+Compliance as Code. We do not rely on generative ambiguity for security. We utilize a proprietary, hardened Standard Library (@vocoweb/kernel) that enforces GDPR compliance, Identity Management, and Data Sovereignty at the compiler level. The logic is not written; it is injected.
+
+02. The Sovereignty Shield
+Data Residency Enforcement. For the EU market, compliance is binary. VocoWeb’s runtime environment strictly enforces data boundaries, ensuring your application meets the rigorous demands of enterprise governance from the first deploy.
+
+03. The Financial Backbone
+Integrated Merchant Infrastructure. Revenue is not an afterthought. Our architecture creates a direct bridge between your application logic and global financial rails. Payments, invoicing, and tax calculation are native to the VocoWeb environment.
+
+[ THE ROADMAP - THE "PRIZE" FRAME ]
+The Master Plan.
+We are executing a multi-phase transition to autonomous enterprise.
+PHASE 1: THE FACTORY (LIVE) Infrastructure Sovereignty. The deployment of isolated, hardware-virtualized MicroVMs. Eliminating the "shared tenant" risk profile entirely.
+PHASE 2: THE STANDARD (DEPLOYING) The Compliance Kernel. The release of our proprietary SDKs to standardize Identity (@vocoweb/auth) and Commerce (@vocoweb/pay) across the ecosystem.
+PHASE 3: THE INTELLECTUAL LAYER (ALPHA) VocoStrategy. The shift from "prompting" to "planning." An AI Product Manager that converts abstract intent into rigorous technical specifications (PRDs).
+[ PRICING - THE "INVESTMENT" FRAME ]
+Secure Your Infrastructure.
+Access to the Foundry is tiered based on operational capacity.
+
+Builder Access
+$39 /month For validating commercial viability.
+Infrastructure: 3 Live MicroVM Deployments
+Core Engine: VocoBuild Access (Eco Mode)
+Commerce: Stripe Integration Capabilities
+Asset Control: Full Code Export (GitHub/ZIP)
+Identity: Standard Auth Integration [ SECURE ACCESS ]
+Founder Access
+$79 /month For scaling revenue-generating assets.
+Infrastructure: Unlimited Deployments
+Core Engine: Priority Turbo Queue
+Intelligence: Alpha Access to VocoStrategy
+Compliance: Access to Proprietary Kernel Modules
+Support: Direct Founder Channel [ JOIN THE FOUNDRY ]
+[ FAQ - THE "AUTHORITY" FRAME ]
+Operational Intelligence.
+Q: What is the VocoWeb Kernel? A: It is our proprietary Standard Library. While others rely on generative probability, the Kernel provides deterministic security. It is a pre-audited, hard-coded layer that handles Authentication, Payments, and Legal Compliance. It ensures that every VocoWeb application is enterprise-grade by default.
+
+Q: Why MicroVMs instead of standard containers? A: Security and Isolation. Standard containers share a kernel, creating a "noisy neighbor" risk profile unacceptable for serious business. VocoWeb utilizes Firecracker MicroVMs to provide hardware-level isolation for every deployment.
+
+Q: Is this platform compliant for the EU market? A: Explicitly. VocoWeb was architected with a "Europe-First" compliance mindset. Our infrastructure defaults to EU data residency, and our Kernel includes automated workflows for GDPR "Right to be Forgotten" and ePrivacy Directive mandates.
+
+Q: Do I retain asset sovereignty? A: Absolute sovereignty. You are building an asset, not renting a service. You retain full ownership of your codebase and data, with the ability to export or self-host your application at any time using our standard open-source libraries.
+
+VOCOWEB Architecting the future of automated enterprise. [Legal] [Security] [Status] © 2026 VocoWeb. All Rights Reserved.

@@ -29,22 +29,22 @@ export default function Navbar() {
                 {/* Nav Links */}
                 <div className="hidden md:flex items-center gap-4">
                     <Link
-                        href="/brochure"
+                        href="/vision"
                         className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
                     >
-                        Brochure
+                        Vision
                     </Link>
                     <Link
                         href="#architecture"
                         className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
                     >
-                        Architecture
+                        ARCHITECTURE
                     </Link>
                     <Link
                         href="#pricing"
                         className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
                     >
-                        Pricing
+                        ACCESS
                     </Link>
                 </div>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
                     href="https://app.vocoweb.in"
                     className="ml-2 bg-safety-orange text-void-black font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 rounded-full hover:bg-orange-500 transition-colors"
                 >
-                    Start Building
+                    Deploy
                 </a>
             </div>
         </nav>

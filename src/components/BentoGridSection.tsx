@@ -2,47 +2,49 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Search, ShieldCheck, BrainCircuit, Hammer } from 'lucide-react';
+import { Search, ShieldCheck, BrainCircuit, Hammer, Activity } from 'lucide-react';
 
 const features = [
   {
-    id: 'research',
-    title: 'VocoResearch',
-    phase: 'PHASE 2: IN DEVELOPMENT',
-    headline: 'Intelligence, Not Intuition',
-    copy: 'We are training deep-search agents to validate market demand before you commit resources.',
-    status: 'Deploying Q3 2026',
+    id: 'factory',
+    title: 'Global Edge Deployment',
+    phase: 'PHASE 1: THE FACTORY (LIVE)',
+    headline: 'Instant, Serverless Deployment to a Distributed Global Network',
+    copy: 'Zero config, infinite scale. Deploy to a managed edge infrastructure for global scale and zero latency.',
+    status: 'Status: Available Now',
     size: 'large',
-    icon: <Search className="w-8 h-8 text-safety-orange" />
+    icon: <Hammer className="w-8 h-8 text-safety-orange" />,
+    highlight: true
   },
   {
-    id: 'security',
-    title: 'Security',
-    headline: 'Safety in Structure',
-    copy: 'Your identity, payments, and deployment pipeline are fused into a single, impenetrable core.',
+    id: 'fortress',
+    title: 'Private MicroVM Sovereignty',
+    phase: 'PHASE 2: THE FORTRESS (IN DEVELOPMENT)',
+    headline: 'Hardware-Isolated Firecracker MicroVMs',
+    copy: 'The rollout of hardware-isolated Firecracker MicroVMs for data-sensitive Enterprise workloads requiring true isolation.',
+    status: 'Status: In Development',
     size: 'medium',
     icon: <ShieldCheck className="w-8 h-8 text-safety-orange" />
   },
   {
-    id: 'strategy',
-    title: 'VocoStrategy',
-    phase: 'PHASE 2: IN DEVELOPMENT',
-    headline: 'The AI Product Manager',
-    copy: 'Converting unstructured notes into formal product plans and organized data structures.',
-    status: 'In internal beta testing',
+    id: 'standard',
+    title: 'The Compliance Kernel',
+    phase: 'PHASE 3: THE STANDARD (DEPLOYING)',
+    headline: 'Standardizing Identity and Commerce',
+    copy: 'The release of our proprietary SDKs to standardize Identity (@vocoweb/auth) and Commerce (@vocoweb/pay) across the ecosystem.',
+    status: 'Status: Deploying Now',
     size: 'medium',
-    icon: <BrainCircuit className="w-8 h-8 text-safety-orange" />
+    icon: <ShieldCheck className="w-8 h-8 text-safety-orange" />
   },
   {
-    id: 'build',
-    title: 'VocoBuild',
-    phase: 'PHASE 1: LIVE NOW',
-    headline: 'Industrial-Grade Generation',
-    copy: 'Generate clean, production-ready web applications with zero usage limits.',
-    status: 'Available now',
+    id: 'intellectual',
+    title: 'VocoStrategy',
+    phase: 'PHASE 4: THE INTELLECTUAL LAYER (ALPHA)',
+    headline: 'From "Prompting" to "Planning"',
+    copy: 'The shift to an AI Product Manager that converts abstract intent into rigorous technical specifications (PRDs).',
+    status: 'Status: Alpha Access',
     size: 'large',
-    icon: <Hammer className="w-8 h-8 text-safety-orange" />,
-    highlight: true
+    icon: <BrainCircuit className="w-8 h-8 text-safety-orange" />
   }
 ];
 
@@ -60,11 +62,10 @@ export default function BentoGridSection() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="eyebrow mb-4">The Master Plan</div>
-          <h2 className="heading-lg mb-6">Safety in Structure</h2>
+          <div className="eyebrow mb-4">THE ROADMAP</div>
+          <h2 className="heading-lg mb-6">The Master Plan.</h2>
           <p className="body-text-large max-w-3xl mx-auto">
-            The modern web is fragmented. VocoWeb is unified. We are building the solution:
-            A unified Business Operating System.
+            We are executing a multi-phase transition to autonomous enterprise.
           </p>
         </motion.div>
 

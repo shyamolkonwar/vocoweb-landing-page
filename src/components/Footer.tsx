@@ -52,21 +52,19 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links Column */}
-          <div>
-            <h4 className="font-mono text-sm text-safety-orange mb-4">LINKS</h4>
-            <div className="space-y-2 font-mono text-sm">
-              <div><Link href="/contact" className="hover:text-safety-orange transition-colors">Contact Us</Link></div>
-              <div><Link href="/report" className="hover:text-safety-orange transition-colors">Report Issue</Link></div>
-            </div>
-          </div>
-
           {/* Legal Column */}
           <div>
             <h4 className="font-mono text-sm text-safety-orange mb-4">LEGAL</h4>
             <div className="space-y-2 font-mono text-sm">
               <div><Link href="/privacy" className="hover:text-safety-orange transition-colors">Privacy</Link></div>
               <div><Link href="/terms" className="hover:text-safety-orange transition-colors">Terms</Link></div>
+            </div>
+          </div>
+
+          {/* Security Column */}
+          <div>
+            <h4 className="font-mono text-sm text-safety-orange mb-4">SECURITY</h4>
+            <div className="space-y-2 font-mono text-sm">
               <div><Link href="/security" className="hover:text-safety-orange transition-colors">Security</Link></div>
             </div>
           </div>
@@ -86,7 +84,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="font-mono text-sm mb-4 md:mb-0">
-              © 2026 VocoWeb.
+              © 2026 VocoWeb. All Rights Reserved.
             </div>
             <div className="font-mono text-xs text-gray-500">
               Architecting the future of automated enterprise.

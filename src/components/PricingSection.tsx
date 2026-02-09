@@ -8,68 +8,67 @@ const pricingPlans = [
     name: 'Free Forever',
     price: '$0',
     period: 'forever',
-    description: 'Test the engine. See the architecture.',
+    description: 'For testing the engine.',
     features: [
-      'Limited AI Generation',
+      'Limited AI Generation (Eco Mode)',
       'Live Preview Environment',
-      'Non-Commercial License',
-      'Cannot Export or Deploy'
+      'Kernel: Read-Only Access',
+      'Cannot Deploy to Production',
+      'Non-Commercial License'
     ],
     cta: 'Start Testing',
     highlight: false
   },
   {
     id: 'builder',
-    name: 'The Builder',
+    name: 'Builder Access',
     price: '$39',
     period: 'month',
-    description: 'Perfect for starting your journey',
+    description: 'For validating commercial viability.',
     features: [
-      'VocoBuild Engine (Live)',
-      '3 Live Deployments',
-      'Unlimited Standard Generations*',
-      'Full Code Download',
-      'Stripe Payments Integration',
-      'Waitlist Priority for VocoResearch'
+      'Infrastructure: 3 Live Edge Deployments',
+      'Core Engine: VocoBuild Access (Eco Mode)',
+      'Commerce: Stripe Integration Capabilities',
+      'Asset Control: Full Code Export (GitHub/ZIP)',
+      'Identity: Standard Auth Integration'
     ],
-    cta: 'Start Building',
+    cta: 'Secure Access',
     highlight: false
   },
   {
     id: 'founder',
-    name: 'The Founder',
+    name: 'Founder Access',
     price: '$79',
     period: 'month',
-    description: 'For serious builders and teams',
+    description: 'For scaling revenue-generating assets.',
     features: [
-      'VocoBuild Engine (Live)',
-      'Unlimited Projects',
-      'Priority Generation Queue',
-      'Real-time Project Sync',
-      'Stripe Payments Integration',
-      'Alpha Access to VocoStrategy'
+      'Infrastructure: Unlimited Deployments',
+      'Core Engine: Priority Turbo Queue',
+      'Intelligence: Alpha Access to VocoStrategy',
+      'Compliance: Access to Proprietary Kernel Modules',
+      'Support: Direct Founder Channel'
     ],
-    cta: 'Join as Founder',
+    cta: 'Join The Foundry',
     highlight: true
   }
 ];
 
 const faqs = [
   {
-    question: 'Why are some features locked?',
-    answer: 'We are building a Business Operating System, not just a chatbot. We refuse to release the Intelligence Layer (Research/Strategy) until it meets our standard of accuracy. Phase 1 is focused purely on the Build Engine.'
+    question: 'What is the VocoWeb Kernel?',
+    answer: 'It is our proprietary Standard Library. While others rely on generative probability, the Kernel provides deterministic security. It is a pre-audited, hard-coded layer that handles Authentication, Payments, and Legal Compliance. It ensures that every VocoWeb application is enterprise-grade by default.'
   },
   {
-    question: 'Can I really export my code?',
-    answer: 'Yes. You are building a business, not renting a room. You can export your complete project files to any platform at any time.'
+    question: 'How does the infrastructure scale?',
+    answer: 'We utilize a Global Edge Network architecture. Unlike traditional servers that hit capacity limits, VocoWeb deployments automatically replicate across global availability zones, ensuring enterprise-grade uptime from Day 1.'
   },
   {
-    question: 'How is the "Builder" different from others?',
-    answer: 'Most builders run in shared, fragile web environments. VocoBuild provides dedicated, secure infrastructure for every project. It is built for serious business use, not just experimentation.'
+    question: 'Is this platform compliant for the EU market?',
+    answer: 'Explicitly. VocoWeb was architected with a "Europe-First" compliance mindset. Our infrastructure defaults to EU data residency, and our Kernel includes automated workflows for GDPR "Right to be Forgotten" and ePrivacy Directive mandates.'
   },
   {
-    question: 'What happens when Phase 2 launches?',
-    answer: 'Active subscribers will receive automatic access to VocoResearch and VocoStrategy tools as they roll out, likely at no additional cost for early adopters.'
+    question: 'Do I retain asset sovereignty?',
+    answer: 'Absolute sovereignty. You are building an asset, not renting a service. You retain full ownership of your codebase and data, with the ability to export or self-host your application at any time using our standard open-source libraries.'
   }
 ];
 
@@ -85,11 +84,10 @@ export default function PricingSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="eyebrow mb-4">Early Access Pricing</div>
-          <h2 className="heading-lg mb-6">Build Today. Ready for Tomorrow.</h2>
+          <div className="eyebrow mb-4">PRICING</div>
+          <h2 className="heading-lg mb-6">Secure Your Infrastructure.</h2>
           <p className="body-text-large max-w-3xl mx-auto">
-            Why start with VocoWeb&apos;s builder now? Because the applications you generate today
-            are being structured for the ecosystem of tomorrow.
+            Access to the Foundry is tiered based on operational capacity.
           </p>
         </motion.div>
 
@@ -178,7 +176,7 @@ export default function PricingSection() {
             <div className="text-center md:text-left">
               <h3 className="heading-md text-white mb-2">Enterprise</h3>
               <p className="body-text text-gray-400 max-w-xl">
-                For organizations requiring private infrastructure and guaranteed uptime.
+                For organizations requiring data sovereignty.
               </p>
             </div>
             <div className="text-center md:text-right">
@@ -191,20 +189,16 @@ export default function PricingSection() {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
-                <span className="body-text text-gray-300">Everything in Founder +</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
                 <div className="body-text">
-                  <span className="text-white font-medium">Private Cloud Deployment</span>
-                  <p className="text-xs text-gray-500 mt-0.5">Dedicated instance for your organization</p>
+                  <span className="text-white font-medium">Private Cloud Deployment (BYOC)</span>
+                  <p className="text-xs text-gray-500 mt-0.5">Bring Your Own Cloud</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
                 <div className="body-text">
-                  <span className="text-white font-medium">SSO / SAML Integration</span>
-                  <p className="text-xs text-gray-500 mt-0.5">Coming soon</p>
+                  <span className="text-white font-medium">Dedicated Instance (Your VPC)</span>
+                  <p className="text-xs text-gray-500 mt-0.5">Isolated infrastructure</p>
                 </div>
               </div>
             </div>
@@ -213,22 +207,27 @@ export default function PricingSection() {
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
                 <div className="body-text">
+                  <span className="text-white font-medium">SSO / SAML Integration</span>
+                  <p className="text-xs text-gray-500 mt-0.5">Enterprise identity</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
+                <div className="body-text">
                   <span className="text-white font-medium">99.9% Uptime SLA</span>
                   <p className="text-xs text-gray-500 mt-0.5">Guaranteed reliability</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
-                <div className="body-text">
-                  <span className="text-white font-medium">Dedicated Account Manager</span>
-                  <p className="text-xs text-gray-500 mt-0.5">Direct personal support channel</p>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-safety-orange rounded-full mt-2 flex-shrink-0" />
                 <div className="body-text">
                   <span className="text-white font-medium">Custom Contracts & Invoicing</span>
-                  <p className="text-xs text-gray-500 mt-0.5">PDF invoicing available</p>
+                  <p className="text-xs text-gray-500 mt-0.5">Flexible billing</p>
                 </div>
               </div>
             </div>
@@ -258,8 +257,8 @@ export default function PricingSection() {
           transition={{ duration: 0.8 }}
         >
           <div className="text-center mb-12">
-            <h3 className="heading-md mb-4">Honest & Direct</h3>
-            <p className="body-text">No marketing speak. Just facts.</p>
+            <div className="eyebrow mb-4">FAQ</div>
+            <h3 className="heading-md mb-4">Operational Intelligence</h3>
           </div>
 
           <div className="space-y-6">

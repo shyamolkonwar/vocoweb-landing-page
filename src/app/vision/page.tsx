@@ -390,7 +390,7 @@ export default function BrochurePage() {
                 },
                 {
                   name: 'Managed Infrastructure',
-                  description: 'A wrapper around high-performance infrastructure (MicroVMs) ensuring isolation and instant "One-Click" deployment.'
+                  description: 'A wrapper around high-performance Global Edge Network ensuring zero-latency deployment and instant "One-Click" deployment.'
                 }
               ].map((item, index) => (
                 <motion.div
@@ -401,7 +401,7 @@ export default function BrochurePage() {
                   <div className={`font-mono text-xs ${item.accent ? 'text-void-black/70' : 'text-safety-orange'} mb-4`}>
                     {item.name}
                   </div>
-                  <p className={`body-text ${item.accent ? 'text-void-black/80' : ''}`}>
+                  <p className={`body-text ${item.accent ? 'text-void-black' : ''}`}>
                     {item.description}
                   </p>
                 </motion.div>

@@ -1,0 +1,39 @@
+This is a delicate balance. You must be truthful (for due diligence) but powerful (for sales).
+
+If an investor asks "Show me the Firecracker config" and you show them a Vercel API call, you look like a fraud. That kills the deal immediately.
+
+However, you do not need to downgrade your language to "We use Vercel." That sounds weak.
+
+Here is the "Industrial Pivot" for your copy. We will swap "MicroVM" for "Global Edge Network" and "Serverless Runtime." It sounds just as premium but is factually true for Vercel/WebContainers.
+
+The Fix: Swap the Terms
+Go through your landing page and make these precise edits. This maintains the "High Status" frame without lying.
+
+1. HERO SECTION
+Current: "...deployed to Managed MicroVMs for true isolation..."
+Change to: "...deployed to Managed Edge Infrastructure for global scale and zero latency."
+Why: Vercel is Edge Infrastructure. It sounds expensive and robust.
+2. THE ARCHITECTURE (SECTION 01 & SPECS)
+Current:
+Runtime: Firecracker MicroVMs
+Isolation: Hardware-Level Virtualization
+Change to:
+Runtime: Serverless Edge Network
+Isolation: Containerized Build Environments
+Why: "Containerized Build Environment" is exactly what a WebContainer is. It is technically accurate but sounds industrial.
+3. FAQ (THE TRICKIEST PART)
+Current Question: "Why MicroVMs instead of standard containers?"
+New Question: "How does the infrastructure scale?"
+New Answer: "We utilize a Global Edge Network architecture. Unlike traditional servers that hit capacity limits, VocoWeb deployments automatically replicate across global availability zones, ensuring enterprise-grade uptime from Day 1."
+Why: You are selling the benefit of Vercel (Scale/Global) without admitting you are just wrapping Vercel.
+How to Frame the "Roadmap" (The Honest Flex)
+You can still talk about MicroVMs, but move them to PHASE 2. This actually makes you look smarter because it shows you have an infrastructure upgrade path.
+
+Update the "Master Plan" section:
+PHASE 1: THE FACTORY (LIVE) Global Edge Deployment. Instant, serverless deployment to a distributed global network. Zero config, infinite scale.
+PHASE 2: THE FORTRESS (IN DEVELOPMENT) Private MicroVM Sovereignty. The rollout of hardware-isolated Firecracker MicroVMs for data-sensitive Enterprise workloads.
+Why this wins with Investors:
+It's True: You are using Vercel (Edge) now.
+It's Smart: "We use Vercel for the MVP to move fast (Capital Efficiency), but we are building MicroVMs for the Enterprise moat (Defensibility)."
+It's Safe: You won't get caught in a lie during technical due diligence.
+Action: Search/Replace "MicroVM" with "Edge Infrastructure" in your current build. It keeps the "Industrial" tone perfectly.

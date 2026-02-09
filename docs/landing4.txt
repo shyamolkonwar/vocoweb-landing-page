@@ -1,0 +1,101 @@
+[ WEBPAGE START ]
+[ NAVBAR ]
+VOCOWEB | MANIFESTO | Brochure | PRICING | [ START BUILDING ]
+
+[ HERO SECTION ]
+The Sovereign Business Operating System.
+From Concept to Exit. One Platform.
+Most AI tools generate disposable code. VocoWeb architects sustainable companies. We combine an industrial-grade builder with a proprietary Compliance Kernel to automate the bureaucracy—Auth, Payments, and Legal—so you can focus on the product.
+
+[ START BUILDING ] Status: Phase 1 Operational • No Credit Card Required
+
+[ THE DASHBOARD PREVIEW ]
+(Visual of the Foundry Dashboard showing "Revenue", "Users", and "System Health")
+
+SYSTEM STATUS: BUILDER [ONLINE] | KERNEL [ACTIVE] | COMPLIANCE [SECURE]
+
+[ THE MASTER PLAN ]
+We Are Not A Code Editor. We Are A Factory.
+The modern stack is fragmented. VocoWeb is unified.
+
+PHASE 1: THE FACTORY (LIVE)
+VocoBuild Engine Generate clean, production-ready React & Node.js applications. Unlike competitors that run in fragile sandboxes, VocoWeb builds are deployed to Managed MicroVMs for true isolation and security.
+Status: Available Now
+PHASE 2: THE STANDARD LIBRARY (LIVE)
+The Proprietary Kernel We don't "vibe code" security. We inject it. Every app ships with @vocoweb/kernel pre-installed—handling Authentication, Stripe Payments, and GDPR compliance via hard-coded, audited modules.
+Status: Available Now
+PHASE 3: THE INTELLIGENCE (ALPHA)
+VocoStrategy & Research The AI Product Manager. Converting unstructured notes into formal Product Requirement Documents (PRDs) and validating market demand before you write a single line of code.
+Status: In Private Alpha
+PHASE 4: THE OPERATIONS (BETA)
+The Foundry Dashboard The integrated backbone for your business. Manage Users, view Analytics, and control your Revenue stream from a single "CEO View."
+Status: Beta Access
+[ THE ARCHITECTURE ]
+THE KERNEL SPECS
+// PURE FACTS. NO MARKETING.
+
+INFRASTRUCTURE
+Runtime: Firecracker MicroVMs
+Cold Start: < 100ms
+Isolation: Hardware-Level Virtualization
+Region: EU-Native (Frankfurt Default)
+COMPLIANCE
+GDPR: Automated "Right to be Forgotten"
+Legal: Auto-generated Privacy Policy
+Accessibility: WCAG 2.1 AA Enforced
+Export: Full GitHub Sync (No Lock-in)
+COMMERCE
+Payments: Stripe Connect Integration
+Billing: Pre-built Pricing UI
+Invoicing: EU-Compliant PDF Generation
+Tax: VAT/GST Logic Ready
+[ PRICING ]
+Build Today. Ready for Tomorrow.
+We charge for outcomes, not attempts. No hidden token fees.
+
+[ MONTHLY ] | [ YEARLY (-20%) ]
+
+Free Forever
+$0 /forever For testing the engine.
+Limited AI Generation (Eco Mode)
+Live Preview Environment
+Kernel: Read-Only Access
+❌ Cannot Deploy to Production
+❌ Non-Commercial License [ START TESTING ]
+The Builder
+$39 /month The Launchpad.
+VocoBuild Engine (Live)
+3 Live MicroVM Deployments
+Unlimited Standard Generations*
+Stripe Payments Integration
+Full Code Export (GitHub/ZIP)
+Access to @vocoweb/kernel modules [ START BUILDING ]
+The Founder
+$79 /month The Business.
+Everything in Builder, plus:
+Unlimited Deployments
+Priority Turbo Queue (Smarter AI)
+Real-time Project Sync
+Alpha Access: VocoStrategy Agent
+Priority Support: Direct Founder Channel [ JOIN AS FOUNDER ]
+* Unlimited Standard Generations subject to Fair Use Policy. Turbo Mode credits available for complex logic.
+
+[ ENTERPRISE ]
+Enterprise
+For organizations requiring data sovereignty. Custom
+Private Cloud Deployment (BYOC)
+Dedicated Instance (Your VPC)
+SSO / SAML Integration
+99.9% Uptime SLA
+Custom Contracts & Invoicing [ CONTACT SALES ]
+[ FAQ ]
+Honest & Direct.
+Q: Why should I use this instead of Bolt or Replit? A: Bolt and Replit are "Code Toys." They are great for prototypes but break when you try to handle Payments, Auth, or Compliance. VocoWeb is a Business Foundry. We provide the "Boring" infrastructure (Kernel) that keeps your app legal, secure, and profitable.
+
+Q: Do I own my code? A: Yes. We are a launchpad, not a prison. You can export your full source code to GitHub at any time. Our proprietary SDKs (@vocoweb/auth) are public npm packages, so your code continues to work even if you host it elsewhere.
+
+Q: What is the "Kernel"? A: The Kernel is our proprietary Standard Library. Instead of asking AI to write insecure authentication code from scratch, we inject a pre-built, audited security module. This guarantees your app is safe and compliant by default.
+
+Q: Is this GDPR compliant? A: Yes. We are built for the EU B2B Market. Our infrastructure defaults to EU regions, and our Kernel includes automated "Cookie Consent" and "Data Deletion" workflows required by European law.
+
+VOCOWEB Architecting the future of automated enterprise. [Contact] [Privacy] [Terms] [Security] © 2026 VocoWeb. All Rights Reserved.
