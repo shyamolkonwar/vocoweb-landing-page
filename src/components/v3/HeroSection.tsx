@@ -6,6 +6,13 @@ import WaitlistDialog from "./WaitlistDialog";
 export default function HeroSection() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+  const scrollToArchitecture = () => {
+    const element = document.getElementById("architecture");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-4xl gap-6 md:gap-8 relative py-16 md:py-20 px-4 md:px-6 mx-auto w-full">
       {/* Ambient Glow */}
@@ -42,7 +49,11 @@ export default function HeroSection() {
         >
           Join Waitlist
         </button>
-        <button className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded border border-[#1C1E26] bg-transparent text-[#F4F6FB] text-sm font-bold h-12 px-6 tracking-wide hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+        <button
+          onClick={scrollToArchitecture}
+          className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded border border-[#1C1E26] bg-transparent text-[#F4F6FB] text-sm font-bold h-12 px-6 tracking-wide hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all uppercase"
+          style={{ fontFamily: "var(--font-geist-mono), monospace" }}
+        >
           View Architecture
         </button>
       </div>
