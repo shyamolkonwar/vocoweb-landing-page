@@ -180,7 +180,7 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-[#1C1E26] flex flex-col md:flex-row justify-between items-center gap-4 px-4 md:px-6 lg:px-12 w-full">
         <p className="text-[#8892A4] text-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>© {currentYear} Rivtor Industries. All rights reserved.</p>
         <div className="flex gap-4 items-center">
-          <span className="text-[#8892A4] text-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>Connect</span>
+          <span className="text-[#8892A4] text-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>Connect:</span>
           {/* Instagram */}
           <a
             href="https://www.instagram.com/rivtor.hq/"
