@@ -3,6 +3,9 @@ create table public.waitlist (
   id uuid not null default gen_random_uuid (),
   created_at timestamp with time zone not null default now(),
   email text not null,
+  name text not null,
+  business_name text,
+  country text not null,
   constraint waitlist_pkey primary key (id)
 ) tablespace pg_default;
 

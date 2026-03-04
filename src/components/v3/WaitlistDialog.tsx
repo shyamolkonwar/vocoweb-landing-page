@@ -8,7 +8,12 @@ interface WaitlistDialogProps {
 }
 
 export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps) {
-  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState({
+    email: "",
+    name: "",
+    business_name: "",
+    country: "",
+  });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -21,7 +26,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
       const res = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify(formData),
       });
 
       const data = await res.json();
@@ -31,7 +36,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
       }
 
       setStatus("success");
-      setEmail("");
+      setFormData({ email: "", name: "", business_name: "", country: "" });
     } catch (error) {
       console.error(error);
       setStatus("error");
@@ -42,8 +47,12 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
   const handleClose = () => {
     setStatus("idle");
     setErrorMessage("");
-    setEmail("");
+    setFormData({ email: "", name: "", business_name: "", country: "" });
     onClose();
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   if (!isOpen) return null;
@@ -57,7 +66,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
       />
 
       {/* Dialog */}
-      <div className="relative bg-[#0E0F12] border border-[#1C1E26] rounded-lg max-w-md w-full p-8 shadow-2xl">
+      <div className="relative bg-[#0E0F12] border border-[#1C1E26] rounded-lg max-w-md w-full p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={handleClose}
@@ -92,19 +101,98 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div>
+                <label htmlFor="name" className="block text-xs text-[#8892A4] uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+                  Name <span className="text-[#C8D8F0]">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="John Doe"
+                  className="w-full bg-[#060608] border border-[#1C1E26] text-[#F4F6FB] p-3 focus:outline-none focus:border-[#C8D8F0] transition-colors placeholder-[#8892A4] rounded"
+                  style={{ fontFamily: "var(--font-inter), sans-serif" }}
+                />
+              </div>
+
+              <div>
                 <label htmlFor="email" className="block text-xs text-[#8892A4] uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
-                  Email Address
+                  Email Address <span className="text-[#C8D8F0]">*</span>
                 </label>
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="your@email.com"
                   className="w-full bg-[#060608] border border-[#1C1E26] text-[#F4F6FB] p-3 focus:outline-none focus:border-[#C8D8F0] transition-colors placeholder-[#8892A4] rounded"
                   style={{ fontFamily: "var(--font-inter), sans-serif" }}
                 />
+              </div>
+
+              <div>
+                <label htmlFor="business_name" className="block text-xs text-[#8892A4] uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+                  Business Name <span className="text-[#8892A4]">(optional)</span>
+                </label>
+                <input
+                  type="text"
+                  id="business_name"
+                  name="business_name"
+                  value={formData.business_name}
+                  onChange={handleChange}
+                  placeholder="Your Company Inc."
+                  className="w-full bg-[#060608] border border-[#1C1E26] text-[#F4F6FB] p-3 focus:outline-none focus:border-[#C8D8F0] transition-colors placeholder-[#8892A4] rounded"
+                  style={{ fontFamily: "var(--font-inter), sans-serif" }}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="country" className="block text-xs text-[#8892A4] uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+                  Country <span className="text-[#C8D8F0]">*</span>
+                </label>
+                <select
+                  id="country"
+                  name="country"
+                  required
+                  value={formData.country}
+                  onChange={handleChange}
+                  className="w-full bg-[#060608] border border-[#1C1E26] text-[#F4F6FB] p-3 focus:outline-none focus:border-[#C8D8F0] transition-colors rounded"
+                  style={{ fontFamily: "var(--font-inter), sans-serif" }}
+                >
+                  <option value="">Select your country</option>
+                  <option value="United States">United States</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="India">India</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Austria">Austria</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="China">China</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
 
               {status === "error" && (

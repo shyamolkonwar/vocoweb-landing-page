@@ -4,12 +4,26 @@ import { supabaseAdmin } from "@/lib/supabase";
 export async function POST(req: NextRequest) {
     try {
         const body = await req.json();
-        const { email } = body;
+        const { email, name, business_name, country } = body;
 
         // Basic validation
         if (!email || typeof email !== 'string') {
             return NextResponse.json(
                 { error: "Email is required" },
+                { status: 400 }
+            );
+        }
+
+        if (!name || typeof name !== 'string') {
+            return NextResponse.json(
+                { error: "Name is required" },
+                { status: 400 }
+            );
+        }
+
+        if (!country || typeof country !== 'string') {
+            return NextResponse.json(
+                { error: "Country is required" },
                 { status: 400 }
             );
         }
@@ -29,6 +43,9 @@ export async function POST(req: NextRequest) {
             .insert([
                 {
                     email: email.toLowerCase(),
+                    name: name.trim(),
+                    business_name: business_name?.trim() || null,
+                    country: country.trim(),
                     created_at: new Date().toISOString(),
                 },
             ]);
