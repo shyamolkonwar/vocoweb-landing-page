@@ -84,17 +84,6 @@ export default function Footer() {
                     className="h-4 w-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
-                <a
-                  href="https://www.microsoft.com/startups"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/images/microsoft-for-startups.png"
-                    alt="Microsoft for Startups"
-                    className="h-6 w-auto hover:opacity-80 transition-opacity"
-                  />
-                </a>
               </div>
             </div>
           </div>
