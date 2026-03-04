@@ -34,15 +34,6 @@ export default function Footer() {
         { href: "/contact", label: "Contact" },
       ]
     },
-    {
-      id: "resources",
-      title: "Resources",
-      links: [
-        { href: "#", label: "Documentation" },
-        { href: "#", label: "API Reference" },
-        { href: "#", label: "Status" },
-      ]
-    },
   ];
 
   return (
@@ -117,21 +108,6 @@ export default function Footer() {
               </Link>
               <Link href="/contact" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 Contact
-              </Link>
-            </div>
-
-            <div className="flex flex-col gap-4">
-              <h4 className="text-[#F4F6FB] font-bold uppercase text-sm" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-                Resources
-              </h4>
-              <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                Documentation
-              </Link>
-              <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                API Reference
-              </Link>
-              <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                Status
               </Link>
             </div>
           </div>
