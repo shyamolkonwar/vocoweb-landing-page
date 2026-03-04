@@ -1,6 +1,11 @@
 "use client";
 
+import { useState } from "react";
+import WaitlistDialog from "./WaitlistDialog";
+
 export default function HeroSection() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-4xl gap-6 md:gap-8 relative py-16 md:py-20 px-4 md:px-6 mx-auto w-full">
       {/* Ambient Glow */}
@@ -30,8 +35,12 @@ export default function HeroSection() {
 
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center relative z-10">
-        <button className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded bg-[#C8D8F0] text-[#060608] text-sm font-bold h-12 px-6 tracking-wide hover:shadow-[0_0_20px_-5px_#C8D8F0] transition-all uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
-          Request Engine Access
+        <button
+          onClick={() => setIsDialogOpen(true)}
+          className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded bg-[#C8D8F0] text-[#060608] text-sm font-bold h-12 px-6 tracking-wide hover:shadow-[0_0_20px_-5px_#C8D8F0] transition-all uppercase"
+          style={{ fontFamily: "var(--font-geist-mono), monospace" }}
+        >
+          Join Waitlist
         </button>
         <button className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded border border-[#1C1E26] bg-transparent text-[#F4F6FB] text-sm font-bold h-12 px-6 tracking-wide hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
           View Architecture
@@ -53,6 +62,9 @@ export default function HeroSection() {
           Your browser does not support the video tag.
         </video>
       </div>
+
+      {/* Waitlist Dialog */}
+      <WaitlistDialog isOpen={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
     </section>
   );
 }
