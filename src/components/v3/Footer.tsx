@@ -68,21 +68,32 @@ export default function Footer() {
             </p>
 
             {/* Sponsor Badge */}
-            <div className="flex items-center gap-2 mt-1">
+            <div className="flex flex-col gap-2 mt-1">
               <span className="text-[#8892A4] text-[10px] uppercase tracking-wider" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
                 Supported by
               </span>
-              <a
-                href="https://e2b.dev/startups"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/White-1.png"
-                  alt="E2B"
-                  className="h-4 w-auto hover:opacity-80 transition-opacity"
-                />
-              </a>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://e2b.dev/startups"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/images/White-1.png"
+                    alt="E2B"
+                    className="h-4 w-auto hover:opacity-80 transition-opacity"
+                  />
+                </a>
+                <a
+                  href="https://www.microsoft.com/startups"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white rounded px-1.5 py-0.5 text-[10px] hover:opacity-80 transition-opacity leading-tight font-bold"
+                  style={{ fontFamily: "var(--font-inter), sans-serif", backgroundImage: "linear-gradient(to right, rgb(242, 80, 34), rgb(127, 186, 0), rgb(0, 164, 239), rgb(255, 185, 0))" }}
+                >
+                  Microsoft for Startups
+                </a>
+              </div>
             </div>
           </div>
 
