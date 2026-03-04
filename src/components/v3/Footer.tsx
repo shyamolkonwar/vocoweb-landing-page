@@ -66,6 +66,24 @@ export default function Footer() {
             <p className="text-[#8892A4] text-sm max-w-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Engineering the end of legacy infrastructure.
             </p>
+
+            {/* Sponsor Badge */}
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-[#8892A4] text-[10px] uppercase tracking-wider" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+                Supported by
+              </span>
+              <a
+                href="https://e2b.dev/startups"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/White-1.png"
+                  alt="E2B"
+                  className="h-4 w-auto hover:opacity-80 transition-opacity"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Link Categories - Desktop: Horizontal | Mobile: Accordions */}
