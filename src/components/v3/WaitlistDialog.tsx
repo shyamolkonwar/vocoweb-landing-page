@@ -79,7 +79,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
         </button>
 
         {/* Content */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 text-left">
           <div>
             <h3 className="text-2xl font-bold text-[#F4F6FB] mb-2" style={{ fontFamily: "var(--font-geist), sans-serif" }}>
               Join the Waitlist
@@ -90,7 +90,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
           </div>
 
           {status === "success" ? (
-            <div className="p-4 bg-[#C8D8F0]/10 border border-[#C8D8F0]/30 text-[#C8D8F0] text-center rounded">
+            <div className="p-4 bg-[#C8D8F0]/10 border border-[#C8D8F0]/30 text-[#C8D8F0] rounded">
               <p className="font-semibold" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
                 YOU'RE ON THE LIST
               </p>
@@ -196,7 +196,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
               </div>
 
               {status === "error" && (
-                <div className="p-3 bg-red-500/10 border border-red-500/30 text-red-400 text-sm text-center rounded">
+                <div className="p-3 bg-red-500/10 border border-red-500/30 text-red-400 text-sm rounded">
                   {errorMessage}
                 </div>
               )}
